@@ -487,6 +487,8 @@ public class modelo_usuario {
 
                 return rs.next(); 
 
+                
+
             } else {
 
                 System.out.println("Error de conexión a la base de datos.");

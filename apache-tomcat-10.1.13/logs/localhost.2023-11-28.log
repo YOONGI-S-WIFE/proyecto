@@ -1,0 +1,3122 @@
+28-Nov-2023 07:41:16.249 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-Nov-2023 07:41:16.249 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-Nov-2023 07:41:16.252 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@a5272be')
+28-Nov-2023 08:21:18.452 GRAVE [http-nio-8080-exec-26] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [14] en el fichero java generado: [C:\Users\APRENDIZ\Desktop\proyecto\apache-tomcat-10.1.13\work\Catalina\localhost\sapphire_inventory\org\apache\jsp\index_jsp.java]
+Only a type can be imported. org.openqa.selenium.WebDriver resolves to a package
+
+Ha tenido lugar un error en la línea: [5] en el archivo jsp: [/index.jsp]
+WebDriver cannot be resolved to a type
+2: <%@ page import="org.openqa.selenium.WebDriver" %>
+3: 
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+
+
+Ha tenido lugar un error en la línea: [5] en el archivo jsp: [/index.jsp]
+WebDriver cannot be resolved to a type
+2: <%@ page import="org.openqa.selenium.WebDriver" %>
+3: 
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [14] en el fichero java generado: [C:\Users\APRENDIZ\Desktop\proyecto\apache-tomcat-10.1.13\work\Catalina\localhost\sapphire_inventory\org\apache\jsp\index_jsp.java]
+Only a type can be imported. org.openqa.selenium.WebDriver resolves to a package
+
+Ha tenido lugar un error en la línea: [5] en el archivo jsp: [/index.jsp]
+WebDriver cannot be resolved to a type
+2: <%@ page import="org.openqa.selenium.WebDriver" %>
+3: 
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+
+
+Ha tenido lugar un error en la línea: [5] en el archivo jsp: [/index.jsp]
+WebDriver cannot be resolved to a type
+2: <%@ page import="org.openqa.selenium.WebDriver" %>
+3: 
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:24:48.644 GRAVE [http-nio-8080-exec-21] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [7] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+9:         @Override
+10:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+9:         @Override
+10:         public void run() {
+11: 
+12:             driver.clearHistory();
+13: 
+14:         }
+15:         
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+15:         
+16:     });
+17: 
+18:     driver.onPageLoad(new Runnable() {
+19: 
+20:         @Override
+21:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+20:         @Override
+21:         public void run() {
+22: 
+23:             driver.deleteAllCookies();
+24: 
+25:         }
+26: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [7] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+9:         @Override
+10:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+9:         @Override
+10:         public void run() {
+11: 
+12:             driver.clearHistory();
+13: 
+14:         }
+15:         
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+15:         
+16:     });
+17: 
+18:     driver.onPageLoad(new Runnable() {
+19: 
+20:         @Override
+21:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+20:         @Override
+21:         public void run() {
+22: 
+23:             driver.deleteAllCookies();
+24: 
+25:         }
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:34:51.185 GRAVE [http-nio-8080-exec-46] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [7] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+9:         @Override
+10:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+9:         @Override
+10:         public void run() {
+11: 
+12:             driver.clearHistory();
+13: 
+14:         }
+15:         
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+15:         
+16:     });
+17: 
+18:     driver.onPageLoad(new Runnable() {
+19: 
+20:         @Override
+21:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+20:         @Override
+21:         public void run() {
+22: 
+23:             driver.deleteAllCookies();
+24: 
+25:         }
+26: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [7] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+9:         @Override
+10:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+9:         @Override
+10:         public void run() {
+11: 
+12:             driver.clearHistory();
+13: 
+14:         }
+15:         
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+15:         
+16:     });
+17: 
+18:     driver.onPageLoad(new Runnable() {
+19: 
+20:         @Override
+21:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+20:         @Override
+21:         public void run() {
+22: 
+23:             driver.deleteAllCookies();
+24: 
+25:         }
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:34:52.123 GRAVE [http-nio-8080-exec-42] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:34:52.410 GRAVE [http-nio-8080-exec-41] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:00.365 GRAVE [http-nio-8080-exec-44] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [7] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+9:         @Override
+10:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+9:         @Override
+10:         public void run() {
+11: 
+12:             driver.clearHistory();
+13: 
+14:         }
+15:         
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+15:         
+16:     });
+17: 
+18:     driver.onPageLoad(new Runnable() {
+19: 
+20:         @Override
+21:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+20:         @Override
+21:         public void run() {
+22: 
+23:             driver.deleteAllCookies();
+24: 
+25:         }
+26: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [7] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+9:         @Override
+10:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+9:         @Override
+10:         public void run() {
+11: 
+12:             driver.clearHistory();
+13: 
+14:         }
+15:         
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+15:         
+16:     });
+17: 
+18:     driver.onPageLoad(new Runnable() {
+19: 
+20:         @Override
+21:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+20:         @Override
+21:         public void run() {
+22: 
+23:             driver.deleteAllCookies();
+24: 
+25:         }
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:01.547 GRAVE [http-nio-8080-exec-45] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:02.170 GRAVE [http-nio-8080-exec-39] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:02.675 GRAVE [http-nio-8080-exec-40] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:03.155 GRAVE [http-nio-8080-exec-37] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:03.546 GRAVE [http-nio-8080-exec-38] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:03.834 GRAVE [http-nio-8080-exec-47] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:04.106 GRAVE [http-nio-8080-exec-43] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:04.433 GRAVE [http-nio-8080-exec-42] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [7] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+9:         @Override
+10:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+9:         @Override
+10:         public void run() {
+11: 
+12:             driver.clearHistory();
+13: 
+14:         }
+15:         
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+15:         
+16:     });
+17: 
+18:     driver.onPageLoad(new Runnable() {
+19: 
+20:         @Override
+21:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+20:         @Override
+21:         public void run() {
+22: 
+23:             driver.deleteAllCookies();
+24: 
+25:         }
+26: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [7] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+4: <%
+5:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+6: 
+7:     driver.onPageLoad(new Runnable() {
+8: 
+9:         @Override
+10:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+9:         @Override
+10:         public void run() {
+11: 
+12:             driver.clearHistory();
+13: 
+14:         }
+15:         
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+15:         
+16:     });
+17: 
+18:     driver.onPageLoad(new Runnable() {
+19: 
+20:         @Override
+21:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+20:         @Override
+21:         public void run() {
+22: 
+23:             driver.deleteAllCookies();
+24: 
+25:         }
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:04.658 GRAVE [http-nio-8080-exec-48] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:05.250 GRAVE [http-nio-8080-exec-49] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:35:05.668 GRAVE [http-nio-8080-exec-50] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:39:20.570 GRAVE [http-nio-8080-exec-55] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.onPageLoad(new Runnable() {
+9: 
+10:         @Override
+11:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+10:         @Override
+11:         public void run() {
+12: 
+13:             driver.clearHistory();
+14: 
+15:         }
+16:         
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+16:         
+17:     });
+18: 
+19:     driver.onPageLoad(new Runnable() {
+20: 
+21:         @Override
+22:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [24] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+21:         @Override
+22:         public void run() {
+23: 
+24:             driver.deleteAllCookies();
+25: 
+26:         }
+27: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.onPageLoad(new Runnable() {
+9: 
+10:         @Override
+11:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+10:         @Override
+11:         public void run() {
+12: 
+13:             driver.clearHistory();
+14: 
+15:         }
+16:         
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+16:         
+17:     });
+18: 
+19:     driver.onPageLoad(new Runnable() {
+20: 
+21:         @Override
+22:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [24] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+21:         @Override
+22:         public void run() {
+23: 
+24:             driver.deleteAllCookies();
+25: 
+26:         }
+27: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:45:33.457 GRAVE [http-nio-8080-exec-60] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.onPageLoad(new Runnable() {
+9: 
+10:         @Override
+11:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+10:         @Override
+11:         public void run() {
+12: 
+13:             driver.clearHistory();
+14: 
+15:         }
+16:         
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+16:         
+17:     });
+18: 
+19:     driver.onPageLoad(new Runnable() {
+20: 
+21:         @Override
+22:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [24] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+21:         @Override
+22:         public void run() {
+23: 
+24:             driver.deleteAllCookies();
+25: 
+26:         }
+27: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.onPageLoad(new Runnable() {
+9: 
+10:         @Override
+11:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+10:         @Override
+11:         public void run() {
+12: 
+13:             driver.clearHistory();
+14: 
+15:         }
+16:         
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+16:         
+17:     });
+18: 
+19:     driver.onPageLoad(new Runnable() {
+20: 
+21:         @Override
+22:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [24] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+21:         @Override
+22:         public void run() {
+23: 
+24:             driver.deleteAllCookies();
+25: 
+26:         }
+27: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:45:34.099 GRAVE [http-nio-8080-exec-64] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:45:34.387 GRAVE [http-nio-8080-exec-53] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:45:35.539 GRAVE [http-nio-8080-exec-58] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:45:36.123 GRAVE [http-nio-8080-exec-59] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:45:36.379 GRAVE [http-nio-8080-exec-54] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:45:36.626 GRAVE [http-nio-8080-exec-57] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 08:45:42.610 GRAVE [http-nio-8080-exec-61] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.onPageLoad(new Runnable() {
+9: 
+10:         @Override
+11:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+10:         @Override
+11:         public void run() {
+12: 
+13:             driver.clearHistory();
+14: 
+15:         }
+16:         
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+16:         
+17:     });
+18: 
+19:     driver.onPageLoad(new Runnable() {
+20: 
+21:         @Override
+22:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [24] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+21:         @Override
+22:         public void run() {
+23: 
+24:             driver.deleteAllCookies();
+25: 
+26:         }
+27: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.onPageLoad(new Runnable() {
+9: 
+10:         @Override
+11:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+10:         @Override
+11:         public void run() {
+12: 
+13:             driver.clearHistory();
+14: 
+15:         }
+16:         
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/index.jsp]
+The method onPageLoad(new Runnable(){}) is undefined for the type WebDriver
+16:         
+17:     });
+18: 
+19:     driver.onPageLoad(new Runnable() {
+20: 
+21:         @Override
+22:         public void run() {
+
+
+Ha tenido lugar un error en la línea: [24] en el archivo jsp: [/index.jsp]
+The method deleteAllCookies() is undefined for the type WebDriver
+21:         @Override
+22:         public void run() {
+23: 
+24:             driver.deleteAllCookies();
+25: 
+26:         }
+27: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 10:09:58.584 GRAVE [http-nio-8080-exec-68] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+driver.addEventListener cannot be resolved to a type
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+Syntax error on token(s), misplaced construct(s)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/index.jsp]
+The method run() of type new WebDriverEventListener(){} must override or implement a supertype method
+10:     driver.onPageLoad(new Runnable() {
+11: 
+12:         @Override
+13:         public void run() {
+14: 
+15:             driver.clearHistory();
+16: 
+
+
+Ha tenido lugar un error en la línea: [15] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+12:         @Override
+13:         public void run() {
+14: 
+15:             driver.clearHistory();
+16: 
+17:         }
+18:         
+
+
+Ha tenido lugar un error en la línea: [32] en el archivo jsp: [/index.jsp]
+Syntax error on tokens, delete these tokens
+29: 
+30:     });
+31: 
+32:     });
+33: 
+34: %>
+35: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+driver.addEventListener cannot be resolved to a type
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+Syntax error on token(s), misplaced construct(s)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:     driver.onPageLoad(new Runnable() {
+11: 
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/index.jsp]
+The method run() of type new WebDriverEventListener(){} must override or implement a supertype method
+10:     driver.onPageLoad(new Runnable() {
+11: 
+12:         @Override
+13:         public void run() {
+14: 
+15:             driver.clearHistory();
+16: 
+
+
+Ha tenido lugar un error en la línea: [15] en el archivo jsp: [/index.jsp]
+The method clearHistory() is undefined for the type WebDriver
+12:         @Override
+13:         public void run() {
+14: 
+15:             driver.clearHistory();
+16: 
+17:         }
+18:         
+
+
+Ha tenido lugar un error en la línea: [32] en el archivo jsp: [/index.jsp]
+Syntax error on tokens, delete these tokens
+29: 
+30:     });
+31: 
+32:     });
+33: 
+34: %>
+35: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 10:24:09.804 GRAVE [http-nio-8080-exec-84] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+Syntax error on token "%", @ expected
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     <%
+9:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+10: 
+11:     driver.addEventListener(new WebDriverEventListener() {
+
+
+Ha tenido lugar un error en la línea: [9] en el archivo jsp: [/index.jsp]
+Syntax error, insert "?" to complete Wildcard
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     <%
+9:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+10: 
+11:     driver.addEventListener(new WebDriverEventListener() {
+12:         @Override
+
+
+Ha tenido lugar un error en la línea: [9] en el archivo jsp: [/index.jsp]
+Syntax error, insert ", TypeArgument1" to complete TypeArgumentList1
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     <%
+9:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+10: 
+11:     driver.addEventListener(new WebDriverEventListener() {
+12:         @Override
+
+
+Ha tenido lugar un error en la línea: [9] en el archivo jsp: [/index.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     <%
+9:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+10: 
+11:     driver.addEventListener(new WebDriverEventListener() {
+12:         @Override
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+Syntax error on token "%", @ expected
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     <%
+9:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+10: 
+11:     driver.addEventListener(new WebDriverEventListener() {
+
+
+Ha tenido lugar un error en la línea: [9] en el archivo jsp: [/index.jsp]
+Syntax error, insert "?" to complete Wildcard
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     <%
+9:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+10: 
+11:     driver.addEventListener(new WebDriverEventListener() {
+12:         @Override
+
+
+Ha tenido lugar un error en la línea: [9] en el archivo jsp: [/index.jsp]
+Syntax error, insert ", TypeArgument1" to complete TypeArgumentList1
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     <%
+9:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+10: 
+11:     driver.addEventListener(new WebDriverEventListener() {
+12:         @Override
+
+
+Ha tenido lugar un error en la línea: [9] en el archivo jsp: [/index.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     <%
+9:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+10: 
+11:     driver.addEventListener(new WebDriverEventListener() {
+12:         @Override
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+28-Nov-2023 10:25:02.171 GRAVE [http-nio-8080-exec-84] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+12:     driver.manage().deleteAllCookies();
+13:         }
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+
+
+Ha tenido lugar un error en la línea: [10] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9:         @Override
+10:         public void onPageLoad(WebDriver driver) {
+11: 
+12:     driver.manage().deleteAllCookies();
+13:         }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)

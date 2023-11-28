@@ -1,5 +1,34 @@
-<%@ page contentType = "text/html" pageEncoding = "UTF-8"%>
+<%@ page contentType = "java" pageEncoding = "UTF-8"%>
 <%@ page import="servlets.registro_usuario_servlet" %>
+<%@ page import="org.openqa.selenium.WebDriver" %>
+<%@ page import="org.openqa.selenium.support.events.WebDriverEventListener" %>
+
+<%
+    WebDriver driver = (WebDriver) session.getAttribute("driver");
+
+    driver.onPageLoad(new Runnable() {
+
+        @Override
+        public void run() {
+
+            driver.clearHistory();
+
+        }
+        
+    });
+
+    driver.onPageLoad(new Runnable() {
+
+        @Override
+        public void run() {
+
+            driver.deleteAllCookies();
+
+        }
+
+    });
+
+%>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -20,7 +49,10 @@
 
     <h1> <% out.println ("usuario registrado con exito"); %></h1>
 
-    <% } %>
+    <% } else {
+
+
+    } %>
 
     <button><a href="registro_usuario.jsp">Registrar usuario</a></button> 
 

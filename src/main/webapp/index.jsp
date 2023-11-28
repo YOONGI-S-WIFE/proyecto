@@ -1,4 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="org.openqa.selenium.WebDriver" %>
+<%@ page import="org.openqa.selenium.support.events.WebDriverEventListener" %>
+
+<%
+    WebDriver driver = (WebDriver) session.getAttribute("driver");
+
+    driver.addEventListener(new WebDriverEventListener() {
+
+        @Override
+        public void onPageLoad(WebDriver driver) {
+
+        driver.manage().deleteAllCookies();
+
+        }
+    });
+
+%>
 
 <!DOCTYPE html>
 <html lang="en">
