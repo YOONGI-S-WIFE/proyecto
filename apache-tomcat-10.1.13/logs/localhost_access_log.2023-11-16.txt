@@ -1,0 +1,11 @@
+127.0.0.1 - - [16/Nov/2023:22:08:54 -0500] "GET / HTTP/1.1" 200 11435
+0:0:0:0:0:0:0:1 - - [16/Nov/2023:22:09:15 -0500] "GET /sapphire_inventory HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Nov/2023:22:09:16 -0500] "GET /sapphire_inventory/ HTTP/1.1" 200 742
+0:0:0:0:0:0:0:1 - - [16/Nov/2023:22:09:21 -0500] "POST /sapphire_inventory/login_servlet HTTP/1.1" 200 974
+0:0:0:0:0:0:0:1 - - [16/Nov/2023:22:09:23 -0500] "GET /sapphire_inventory/mostrar_usuarios_servlet?usuarios=usuarios HTTP/1.1" 500 3586
+0:0:0:0:0:0:0:1 - - [16/Nov/2023:22:10:29 -0500] "GET /sapphire_inventory/mostrar_usuarios_servlet?usuarios=usuarios HTTP/1.1" 500 3054
+0:0:0:0:0:0:0:1 - - [16/Nov/2023:22:10:29 -0500] "GET /favicon.ico HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/Nov/2023:22:11:10 -0500] "GET /sapphire_inventory/mostrar_usuarios_servlet?usuarios=usuarios HTTP/1.1" 500 3410
+0:0:0:0:0:0:0:1 - - [16/Nov/2023:22:13:01 -0500] "GET /sapphire_inventory/mostrar_usuarios_servlet?usuarios=usuarios HTTP/1.1" 500 2696
+0:0:0:0:0:0:0:1 - - [16/Nov/2023:22:17:03 -0500] "GET /sapphire_inventory/mostrar_usuarios_servlet?usuarios=usuarios HTTP/1.1" 500 3045
+127.0.0.1 - - [16/Nov/2023:22:19:04 -0500] "GET / HTTP/1.1" 200 11435

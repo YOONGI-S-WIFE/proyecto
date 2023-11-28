@@ -1,0 +1,2571 @@
+13-Nov-2023 22:05:55.984 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+13-Nov-2023 22:05:55.988 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+13-Nov-2023 22:05:55.994 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@411c6d44')
+13-Nov-2023 22:10:31.994 GRAVE [http-nio-8080-exec-27] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	java.lang.NullPointerException: Cannot invoke "java.sql.ResultSet.next()" because "this.rs" is null
+		at models.modelo_usuario.haySiguienteUsuario(modelo_usuario.java:376)
+		at org.apache.jsp.views.mostrar_005fusuarios_jsp._jspService(mostrar_005fusuarios_jsp.java:170)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:41)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 22:10:31.994 GRAVE [http-nio-8080-exec-27] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/mostrar_usuarios.jsp] en línea [43]
+
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% while (rs.haySiguienteUsuario() == true) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "java.sql.ResultSet.next()" because "this.rs" is null
+		at models.modelo_usuario.haySiguienteUsuario(modelo_usuario.java:376)
+		at org.apache.jsp.views.mostrar_005fusuarios_jsp._jspService(mostrar_005fusuarios_jsp.java:170)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:41)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 22:11:24.528 GRAVE [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	java.lang.NullPointerException: Cannot invoke "java.sql.ResultSet.next()" because "this.rs" is null
+		at models.modelo_usuario.haySiguienteUsuario(modelo_usuario.java:376)
+		at org.apache.jsp.views.mostrar_005fusuarios_jsp._jspService(mostrar_005fusuarios_jsp.java:170)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:41)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 22:11:24.528 GRAVE [http-nio-8080-exec-33] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/mostrar_usuarios.jsp] en línea [43]
+
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% while (rs.haySiguienteUsuario()) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "java.sql.ResultSet.next()" because "this.rs" is null
+		at models.modelo_usuario.haySiguienteUsuario(modelo_usuario.java:376)
+		at org.apache.jsp.views.mostrar_005fusuarios_jsp._jspService(mostrar_005fusuarios_jsp.java:170)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:41)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 22:54:25.824 GRAVE [http-nio-8080-exec-59] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+List cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Duplicate local variable usuario
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usuario : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:46)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 22:54:25.824 GRAVE [http-nio-8080-exec-59] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+List cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Duplicate local variable usuario
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usuario : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+List cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Duplicate local variable usuario
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usuario : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:46)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 22:55:24.174 GRAVE [http-nio-8080-exec-64] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usuario : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Duplicate local variable usuario
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usuario : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:46)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 22:55:24.174 GRAVE [http-nio-8080-exec-64] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usuario : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Duplicate local variable usuario
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usuario : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usuario : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Duplicate local variable usuario
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usuario : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:46)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 22:58:44.320 GRAVE [http-nio-8080-exec-72] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [46] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getId_usuario() is undefined for the type mostrar_usuarios_servlet
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getNombres_usuario() is undefined for the type mostrar_usuarios_servlet
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getApellidos_usuario() is undefined for the type mostrar_usuarios_servlet
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getTipo_documento() is undefined for the type mostrar_usuarios_servlet
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getNumero_documento_usuario() is undefined for the type mostrar_usuarios_servlet
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [51] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getTelefono_usuario() is undefined for the type mostrar_usuarios_servlet
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getRol_usuario() is undefined for the type mostrar_usuarios_servlet
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+
+
+Ha tenido lugar un error en la línea: [53] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getUsuario() is undefined for the type mostrar_usuarios_servlet
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+56:         <form action="/sapphire_inventory/actualizar_usuario_servlet" method="POST">
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getContraseña() is undefined for the type mostrar_usuarios_servlet
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+56:         <form action="/sapphire_inventory/actualizar_usuario_servlet" method="POST">
+57:             <input type="hidden" name="usuario_id" value="<%= usuario.getId_usuario() %>">
+
+
+Ha tenido lugar un error en la línea: [57] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getId_usuario() is undefined for the type mostrar_usuarios_servlet
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+56:         <form action="/sapphire_inventory/actualizar_usuario_servlet" method="POST">
+57:             <input type="hidden" name="usuario_id" value="<%= usuario.getId_usuario() %>">
+58:             <input type="submit" value="Actualizar">
+59:         </form>
+60:         <form action="/sapphire_inventory/eliminar_usuario_servlet" method="POST">
+
+
+Ha tenido lugar un error en la línea: [61] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getId_usuario() is undefined for the type mostrar_usuarios_servlet
+58:             <input type="submit" value="Actualizar">
+59:         </form>
+60:         <form action="/sapphire_inventory/eliminar_usuario_servlet" method="POST">
+61:             <input type="hidden" name="usuario_id" value="<%= usuario.getId_usuario() %>">
+62:             <input type="submit" value="Borrar">
+63:         </form>
+64:     </td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:46)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 22:58:44.320 GRAVE [http-nio-8080-exec-72] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [46] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getId_usuario() is undefined for the type mostrar_usuarios_servlet
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getNombres_usuario() is undefined for the type mostrar_usuarios_servlet
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getApellidos_usuario() is undefined for the type mostrar_usuarios_servlet
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getTipo_documento() is undefined for the type mostrar_usuarios_servlet
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getNumero_documento_usuario() is undefined for the type mostrar_usuarios_servlet
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [51] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getTelefono_usuario() is undefined for the type mostrar_usuarios_servlet
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getRol_usuario() is undefined for the type mostrar_usuarios_servlet
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+
+
+Ha tenido lugar un error en la línea: [53] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getUsuario() is undefined for the type mostrar_usuarios_servlet
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+56:         <form action="/sapphire_inventory/actualizar_usuario_servlet" method="POST">
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getContraseña() is undefined for the type mostrar_usuarios_servlet
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+56:         <form action="/sapphire_inventory/actualizar_usuario_servlet" method="POST">
+57:             <input type="hidden" name="usuario_id" value="<%= usuario.getId_usuario() %>">
+
+
+Ha tenido lugar un error en la línea: [57] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getId_usuario() is undefined for the type mostrar_usuarios_servlet
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+56:         <form action="/sapphire_inventory/actualizar_usuario_servlet" method="POST">
+57:             <input type="hidden" name="usuario_id" value="<%= usuario.getId_usuario() %>">
+58:             <input type="submit" value="Actualizar">
+59:         </form>
+60:         <form action="/sapphire_inventory/eliminar_usuario_servlet" method="POST">
+
+
+Ha tenido lugar un error en la línea: [61] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getId_usuario() is undefined for the type mostrar_usuarios_servlet
+58:             <input type="submit" value="Actualizar">
+59:         </form>
+60:         <form action="/sapphire_inventory/eliminar_usuario_servlet" method="POST">
+61:             <input type="hidden" name="usuario_id" value="<%= usuario.getId_usuario() %>">
+62:             <input type="submit" value="Borrar">
+63:         </form>
+64:     </td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [46] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getId_usuario() is undefined for the type mostrar_usuarios_servlet
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getNombres_usuario() is undefined for the type mostrar_usuarios_servlet
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getApellidos_usuario() is undefined for the type mostrar_usuarios_servlet
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getTipo_documento() is undefined for the type mostrar_usuarios_servlet
+46:     <td><%= usuario.getId_usuario() %></td>
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getNumero_documento_usuario() is undefined for the type mostrar_usuarios_servlet
+47:     <td><%= usuario.getNombres_usuario() %></td>
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [51] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getTelefono_usuario() is undefined for the type mostrar_usuarios_servlet
+48:     <td><%= usuario.getApellidos_usuario() %></td>
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getRol_usuario() is undefined for the type mostrar_usuarios_servlet
+49:     <td><%= usuario.getTipo_documento() %></td>
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+
+
+Ha tenido lugar un error en la línea: [53] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getUsuario() is undefined for the type mostrar_usuarios_servlet
+50:     <td><%= usuario.getNumero_documento_usuario() %></td>
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+56:         <form action="/sapphire_inventory/actualizar_usuario_servlet" method="POST">
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getContraseña() is undefined for the type mostrar_usuarios_servlet
+51:     <td><%= usuario.getTelefono_usuario() %></td>
+52:     <td><%= usuario.getRol_usuario() %></td>
+53:     <td><%= usuario.getUsuario() %></td>
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+56:         <form action="/sapphire_inventory/actualizar_usuario_servlet" method="POST">
+57:             <input type="hidden" name="usuario_id" value="<%= usuario.getId_usuario() %>">
+
+
+Ha tenido lugar un error en la línea: [57] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getId_usuario() is undefined for the type mostrar_usuarios_servlet
+54:     <td><%= usuario.getContraseña() %></td>
+55:     <td>
+56:         <form action="/sapphire_inventory/actualizar_usuario_servlet" method="POST">
+57:             <input type="hidden" name="usuario_id" value="<%= usuario.getId_usuario() %>">
+58:             <input type="submit" value="Actualizar">
+59:         </form>
+60:         <form action="/sapphire_inventory/eliminar_usuario_servlet" method="POST">
+
+
+Ha tenido lugar un error en la línea: [61] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+The method getId_usuario() is undefined for the type mostrar_usuarios_servlet
+58:             <input type="submit" value="Actualizar">
+59:         </form>
+60:         <form action="/sapphire_inventory/eliminar_usuario_servlet" method="POST">
+61:             <input type="hidden" name="usuario_id" value="<%= usuario.getId_usuario() %>">
+62:             <input type="submit" value="Borrar">
+63:         </form>
+64:     </td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:46)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:04:49.537 GRAVE [http-nio-8080-exec-79] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:04:49.537 GRAVE [http-nio-8080-exec-79] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:09:58.134 GRAVE [http-nio-8080-exec-73] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:09:58.134 GRAVE [http-nio-8080-exec-73] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:10:00.686 GRAVE [http-nio-8080-exec-82] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	java.lang.ClassNotFoundException: org.apache.jsp.views.mostrar_005fusuarios_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:10:00.686 GRAVE [http-nio-8080-exec-82] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.views.mostrar_005fusuarios_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.views.mostrar_005fusuarios_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:10:16.611 GRAVE [http-nio-8080-exec-81] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:10:16.611 GRAVE [http-nio-8080-exec-81] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarios = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (modelo_usuario usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:11:43.705 GRAVE [http-nio-8080-exec-91] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usus = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usus cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (usus usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usuarios cannot be resolved to a variable
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (usus usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:11:43.705 GRAVE [http-nio-8080-exec-91] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usus = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usus cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (usus usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usuarios cannot be resolved to a variable
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (usus usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usus = usuario.getMostrar_usuarios();
+18: 
+19:     %> 
+20: 
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usus cannot be resolved to a type
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (usus usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usuarios cannot be resolved to a variable
+40:         </thead>
+41:         <tbody>
+42: 
+43:             <% for (usus usu : usuarios) { %>
+44: 
+45: <tr>
+46:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:45)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:20:09.792 GRAVE [http-nio-8080-exec-98] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usus = null;
+18:     usus = usuario.getMostrar_usuarios();
+19: 
+20:     %> 
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+41:         </thead>
+42:         <tbody>
+43: 
+44:             <% for (modelo_usuario usu : usus) { %>
+45: 
+46: <tr>
+47:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:44)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:20:09.792 GRAVE [http-nio-8080-exec-98] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usus = null;
+18:     usus = usuario.getMostrar_usuarios();
+19: 
+20:     %> 
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+41:         </thead>
+42:         <tbody>
+43: 
+44:             <% for (modelo_usuario usu : usus) { %>
+45: 
+46: <tr>
+47:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usus = null;
+18:     usus = usuario.getMostrar_usuarios();
+19: 
+20:     %> 
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+41:         </thead>
+42:         <tbody>
+43: 
+44:             <% for (modelo_usuario usu : usus) { %>
+45: 
+46: <tr>
+47:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:44)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:20:11.652 GRAVE [http-nio-8080-exec-102] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	java.lang.ClassNotFoundException: org.apache.jsp.views.mostrar_005fusuarios_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:44)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:20:11.652 GRAVE [http-nio-8080-exec-102] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.views.mostrar_005fusuarios_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.views.mostrar_005fusuarios_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:44)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:20:20.524 GRAVE [http-nio-8080-exec-95] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usus = null;
+18:     usus = usuario.getMostrar_usuarios();
+19: 
+20:     %> 
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+41:         </thead>
+42:         <tbody>
+43: 
+44:             <% for (modelo_usuario usu : usus) { %>
+45: 
+46: <tr>
+47:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:44)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:20:20.524 GRAVE [http-nio-8080-exec-95] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usus = null;
+18:     usus = usuario.getMostrar_usuarios();
+19: 
+20:     %> 
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+41:         </thead>
+42:         <tbody>
+43: 
+44:             <% for (modelo_usuario usu : usus) { %>
+45: 
+46: <tr>
+47:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usus = null;
+18:     usus = usuario.getMostrar_usuarios();
+19: 
+20:     %> 
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+41:         </thead>
+42:         <tbody>
+43: 
+44:             <% for (modelo_usuario usu : usus) { %>
+45: 
+46: <tr>
+47:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:44)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:24:09.390 GRAVE [http-nio-8080-exec-109] org.apache.catalina.core.ApplicationDispatcher.invoke El Servlet.service() para servlet [jsp] lanzó una excepción
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarioss = null;
+18: 
+19:     try {usuarioss = usuario.getMostrar_usuarios();
+20: 
+
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Syntax error on token "catch", finally expected
+18: 
+19:     try {usuarioss = usuario.getMostrar_usuarios();
+20: 
+21:     } catch {
+22: 
+23:         e.printStackTrace();
+24:     }
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+e cannot be resolved
+20: 
+21:     } catch {
+22: 
+23:         e.printStackTrace();
+24:     }
+25: 
+26:     %> 
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usuarioss cannot be resolved to a type
+47:         </thead>
+48:         <tbody>
+49: 
+50:             <% for (usuarioss usu : usuarios) { %>
+51: 
+52: <tr>
+53:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usuarios cannot be resolved to a variable
+47:         </thead>
+48:         <tbody>
+49: 
+50:             <% for (usuarioss usu : usuarios) { %>
+51: 
+52: <tr>
+53:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:44)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:24:09.390 GRAVE [http-nio-8080-exec-109] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [servlets.mostrar_usuarios_servlet] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarioss = null;
+18: 
+19:     try {usuarioss = usuario.getMostrar_usuarios();
+20: 
+
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Syntax error on token "catch", finally expected
+18: 
+19:     try {usuarioss = usuario.getMostrar_usuarios();
+20: 
+21:     } catch {
+22: 
+23:         e.printStackTrace();
+24:     }
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+e cannot be resolved
+20: 
+21:     } catch {
+22: 
+23:         e.printStackTrace();
+24:     }
+25: 
+26:     %> 
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usuarioss cannot be resolved to a type
+47:         </thead>
+48:         <tbody>
+49: 
+50:             <% for (usuarioss usu : usuarios) { %>
+51: 
+52: <tr>
+53:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usuarios cannot be resolved to a variable
+47:         </thead>
+48:         <tbody>
+49: 
+50:             <% for (usuarioss usu : usuarios) { %>
+51: 
+52: <tr>
+53:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+14:     <%
+15: 
+16:     mostrar_usuarios_servlet usuario = new mostrar_usuarios_servlet();
+17:     List<modelo_usuario> usuarioss = null;
+18: 
+19:     try {usuarioss = usuario.getMostrar_usuarios();
+20: 
+
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Syntax error on token "catch", finally expected
+18: 
+19:     try {usuarioss = usuario.getMostrar_usuarios();
+20: 
+21:     } catch {
+22: 
+23:         e.printStackTrace();
+24:     }
+
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+e cannot be resolved
+20: 
+21:     } catch {
+22: 
+23:         e.printStackTrace();
+24:     }
+25: 
+26:     %> 
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usuarioss cannot be resolved to a type
+47:         </thead>
+48:         <tbody>
+49: 
+50:             <% for (usuarioss usu : usuarios) { %>
+51: 
+52: <tr>
+53:     <td><%= usuario.getId_usuario() %></td>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+usuarios cannot be resolved to a variable
+47:         </thead>
+48:         <tbody>
+49: 
+50:             <% for (usuarioss usu : usuarios) { %>
+51: 
+52: <tr>
+53:     <td><%= usuario.getId_usuario() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at servlets.mostrar_usuarios_servlet.doGet(mostrar_usuarios_servlet.java:44)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+13-Nov-2023 23:24:44.648 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+13-Nov-2023 23:24:44.648 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

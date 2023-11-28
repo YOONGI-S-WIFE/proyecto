@@ -1,0 +1,485 @@
+25-Oct-2023 15:02:35.564 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+25-Oct-2023 15:02:35.564 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+25-Oct-2023 15:02:35.564 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3bd2af5b')
+25-Oct-2023 18:54:13.329 GRAVE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+List cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Usuario cannot be resolved to a type
+36:         <tbody>
+37:             <%
+38: 
+39:                 for (Usuario usuario : usuarios) {
+40:             %>
+41:             <tr>
+42:                 <td><%= usuario.getId() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+List cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Usuario cannot be resolved to a type
+36:         <tbody>
+37:             <%
+38: 
+39:                 for (Usuario usuario : usuarios) {
+40:             %>
+41:             <tr>
+42:                 <td><%= usuario.getId() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+25-Oct-2023 18:54:52.199 GRAVE [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+List cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Usuario cannot be resolved to a type
+36:         <tbody>
+37:             <%
+38: 
+39:                 for (Usuario usuario : usuarios) {
+40:             %>
+41:             <tr>
+42:                 <td><%= usuario.getId() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+List cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Usuario cannot be resolved to a type
+36:         <tbody>
+37:             <%
+38: 
+39:                 for (Usuario usuario : usuarios) {
+40:             %>
+41:             <tr>
+42:                 <td><%= usuario.getId() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+25-Oct-2023 18:54:54.096 GRAVE [http-nio-8080-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.views.mostrar_005fusuarios_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.views.mostrar_005fusuarios_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+25-Oct-2023 18:57:25.550 GRAVE [http-nio-8080-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+List cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Usuario cannot be resolved to a type
+36:         <tbody>
+37:             <%
+38: 
+39:                 for (Usuario usuario : usuarios) {
+40:             %>
+41:             <tr>
+42:                 <td><%= usuario.getId() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+controlador_usuario cannot be resolved to a type
+10: 
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+List cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+modelo_usuario cannot be resolved to a type
+11:     <%
+12: 
+13:     controlador_usuario controlador = (controlador_usuario)request.getAttribute("controlador");
+14:     List<modelo_usuario> usuarios = controlador.getUsuarios();
+15:         
+16:     %>
+17:     <h1>USUARIOS</h1>
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/views/mostrar_usuarios.jsp]
+Usuario cannot be resolved to a type
+36:         <tbody>
+37:             <%
+38: 
+39:                 for (Usuario usuario : usuarios) {
+40:             %>
+41:             <tr>
+42:                 <td><%= usuario.getId() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+25-Oct-2023 18:58:05.933 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+25-Oct-2023 18:58:05.933 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

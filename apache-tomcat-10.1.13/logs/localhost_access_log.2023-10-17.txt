@@ -1,0 +1,10 @@
+127.0.0.1 - - [17/Oct/2023:07:28:01 -1200] "GET / HTTP/1.1" 200 11435
+127.0.0.1 - - [17/Oct/2023:07:28:24 -1200] "GET /sapphire HTTP/1.1" 302 -
+127.0.0.1 - - [17/Oct/2023:07:28:24 -1200] "GET /sapphire/ HTTP/1.1" 200 573
+127.0.0.1 - - [17/Oct/2023:07:28:35 -1200] "GET /sapphire/views/registro_usuario.jsp HTTP/1.1" 200 2245
+127.0.0.1 - - [17/Oct/2023:08:09:41 -1200] "GET /sapphire HTTP/1.1" 302 -
+127.0.0.1 - - [17/Oct/2023:08:09:42 -1200] "GET /sapphire/ HTTP/1.1" 200 471
+127.0.0.1 - - [17/Oct/2023:08:09:42 -1200] "GET /favicon.ico HTTP/1.1" 200 8192
+127.0.0.1 - - [17/Oct/2023:08:10:07 -1200] "GET /sapphire/views/registro_usuario.jsp HTTP/1.1" 200 2437
+127.0.0.1 - - [17/Oct/2023:08:10:18 -1200] "POST /sapphire/views/registro_usuario_servlet HTTP/1.1" 404 735
+127.0.0.1 - - [17/Oct/2023:10:23:49 -1200] "GET / HTTP/1.1" 200 11435
