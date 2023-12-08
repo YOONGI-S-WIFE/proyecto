@@ -17,11 +17,6 @@ public class mostrar_usuarios_servlet extends HttpServlet {
     public void doGet (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 
-        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-        response.setHeader("Pragma", "no-cache");
-        response.setHeader("Expires", "0");
-        response.setHeader("Window-target", "_top");
-
         RequestDispatcher redireccion = request.getRequestDispatcher("views/mostrar_usuarios.jsp");
         redireccion.forward(request, response);
 

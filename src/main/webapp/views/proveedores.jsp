@@ -4,33 +4,16 @@
 <%@ page import="jakarta.servlet.http.HttpSession" %>
 <%@ page import="jakarta.servlet.http.HttpServletRequest" %>
 <%@ page import="jakarta.servlet.RequestDispatcher" %>
-<%@ page import="org.openqa.selenium.WebDriver" %>
-<%@ page import="org.openqa.selenium.support.events.WebDriverEventListener" %>
 
-<%
-    WebDriver driver = (WebDriver) session.getAttribute("driver");
+<% 
 
-    driver.onPageLoad(new Runnable() {
+    HttpSession sesion = request.getSession();
 
-        @Override
-        public void run() {
+    modelo_proveedor modelo = new modelo_proveedor();
 
-            driver.clearHistory();
+    List<modelo_proveedor> proveedores = modelo.proveedores();
 
-        }
-        
-    });
-
-    driver.onPageLoad(new Runnable() {
-
-        @Override
-        public void run() {
-
-            driver.deleteAllCookies();
-
-        }
-
-    });
+    if (sesion.getAttribute("usuario") != null) {   
 
 %>
 
@@ -42,6 +25,86 @@
     <title>proveedores</title>
 </head>
 <body>
+
+    <button><a href="views/registro_usuario.jsp">Registrar usuario</a></button> 
+
+    <button><a href="views/registro_producto.jsp">Registrar producto</a></button> 
+
+    <button><a href="views/registro_categoria.jsp">Registrar categoria</a></button> 
+
+    <button><a href="views/venta.jsp">Registrar venta</a></button> 
+
+    <button><a href="views/entrada.jsp">Registrar entada</a></button> 
+
+    <form action="/sapphire_inventory/mostrar_usuarios_servlet" method="GET">
+    <input value="usuarios" name ="usuarios" type = "submit">
+    </form>
+
+    <form action="/sapphire_inventory/mostrar_categorias_servlet" method="post">
+    <input value="productos" name ="productos" type = "submit">
+    </form>
+
+    <form action="/sapphire_inventory/cerrar_sesion_servlet" method="post">
+        <input value="cerrar sesion" name ="cerrar_sesion" type = "submit">
+        </form>
+
+    <h1>USUARIOS</h1>
+
+    <br>
+
+    <table border="1">
+
+        <thead>
+
+            <tr>
+
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>correo</th>
+                <th>telefono</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <% for (modelo_proveedor proveedor : proveedores) { %>
+
+<tr>
+
+    <td><%= proveedor.getId_proveedor() %></td>
+    <td><%= proveedor.getCorreoo() %></td>
+    <td><%= proveedor.getTelefono() %></td>
+    <td><%= proveedor.getNombre() %></td>
+
+    <td>
+        <form action="views/menu_actualizacion_usuario.jsp" method="GET">
+            <input type="hidden" name="id_actualizar" value="<%=proveedor.getId_proveedor()%>">
+            <input type="submit" value="Actualizar">
+        </form>
+        <form action="/sapphire_inventory/eliminar_usuario_servlet" method="GET">
+            <input type="hidden" name="id_inactivar" value="<%=proveedor.getId_proveedor()%>">
+            <input type="submit" value="inactivar">
+        </form>
+    </td>
+</tr>
+
+<% } %>
+
+        </tbody>
+    </table>
     
 </body>
 </html>
+
+<% 
+
+} else {
+
+    RequestDispatcher redireccion = request.getRequestDispatcher("error_sesion.jsp");
+    redireccion.forward(request, response);
+
+    }
+    
+    %>

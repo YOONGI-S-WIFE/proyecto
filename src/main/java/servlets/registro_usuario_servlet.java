@@ -41,11 +41,6 @@ public class registro_usuario_servlet extends HttpServlet {
     protected void doPost (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 
-        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-        response.setHeader("Pragma", "no-cache");
-        response.setHeader("Expires", "0");
-        response.setHeader("Window-target", "_top");
-
         String nombres_usuario = request.getParameter("nombres_usuario");
         String apellidos_usuario = request.getParameter("apellidos_usuario");
         String tipo_documento_usuario = request.getParameter("tipo_documento_usuario");

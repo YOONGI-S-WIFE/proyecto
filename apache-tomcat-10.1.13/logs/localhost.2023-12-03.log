@@ -1,0 +1,3078 @@
+03-Dec-2023 19:48:34.462 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Dec-2023 19:48:34.463 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Dec-2023 19:48:34.469 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1ee04ff6')
+03-Dec-2023 21:04:23.220 GRAVE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+Type mismatch: cannot convert from Object to HttpSession
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     HttpSession id = request.getAttribute("usuario_id_actualizar") 
+13: 
+14:     if (sesion.getAttribute("usuario") != null) {   
+15: 
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     HttpSession id = request.getAttribute("usuario_id_actualizar") 
+13: 
+14:     if (sesion.getAttribute("usuario") != null) {   
+15: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+Type mismatch: cannot convert from Object to HttpSession
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     HttpSession id = request.getAttribute("usuario_id_actualizar") 
+13: 
+14:     if (sesion.getAttribute("usuario") != null) {   
+15: 
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     HttpSession id = request.getAttribute("usuario_id_actualizar") 
+13: 
+14:     if (sesion.getAttribute("usuario") != null) {   
+15: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:06:12.771 GRAVE [http-nio-8080-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     id = sesion.getAttribute("usuario_id_actualizar");
+13: 
+14:     if (sesion.getAttribute("usuario") != null) {   
+15: 
+
+
+Ha tenido lugar un error en la línea: [30] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+27: 
+28:     <form action="actualizar_usuario.jsp" method="post">
+29:         <input type="hidden" name="nombres" value="nombres">
+30:         <input type="hidden" name="id" value="<%= id %>">
+31:         <button type="submit">Actualizar Nombres</button>
+32:     </form>
+33: 
+
+
+Ha tenido lugar un error en la línea: [36] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+33: 
+34:     <form action="actualizar_usuario.jsp" method="post">
+35:         <input type="hidden" name="apellidos" value="apellidos">
+36:         <input type="hidden" name="id" value="<%= id %>">
+37:         <button type="submit">Actualizar Apellidos</button>
+38:     </form>
+39: 
+
+
+Ha tenido lugar un error en la línea: [42] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+39: 
+40:     <form action="actualizar_usuario.jsp" method="post">
+41:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+42:         <input type="hidden" name="id" value="<%= id %>">
+43:         <button type="submit">Actualizar Tipo de Documento</button>
+44:     </form>
+45: 
+
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Número de Documento</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="telefono" value="telefono">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Teléfono</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="rol" value="rol">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Rol</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="usuario" value="usuario">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Usuario</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="contraseña" value="contraseña">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Contraseña</button>
+74:     </form>
+75: </body>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     id = sesion.getAttribute("usuario_id_actualizar");
+13: 
+14:     if (sesion.getAttribute("usuario") != null) {   
+15: 
+
+
+Ha tenido lugar un error en la línea: [30] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+27: 
+28:     <form action="actualizar_usuario.jsp" method="post">
+29:         <input type="hidden" name="nombres" value="nombres">
+30:         <input type="hidden" name="id" value="<%= id %>">
+31:         <button type="submit">Actualizar Nombres</button>
+32:     </form>
+33: 
+
+
+Ha tenido lugar un error en la línea: [36] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+33: 
+34:     <form action="actualizar_usuario.jsp" method="post">
+35:         <input type="hidden" name="apellidos" value="apellidos">
+36:         <input type="hidden" name="id" value="<%= id %>">
+37:         <button type="submit">Actualizar Apellidos</button>
+38:     </form>
+39: 
+
+
+Ha tenido lugar un error en la línea: [42] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+39: 
+40:     <form action="actualizar_usuario.jsp" method="post">
+41:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+42:         <input type="hidden" name="id" value="<%= id %>">
+43:         <button type="submit">Actualizar Tipo de Documento</button>
+44:     </form>
+45: 
+
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Número de Documento</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="telefono" value="telefono">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Teléfono</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="rol" value="rol">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Rol</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="usuario" value="usuario">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Usuario</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="contraseña" value="contraseña">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Contraseña</button>
+74:     </form>
+75: </body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:07:25.430 GRAVE [http-nio-8080-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method parseInt(String) in the type Integer is not applicable for the arguments (Object)
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     Integer id = Integer.parseInt(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     if (sesion.getAttribute("usuario") != null) {   
+15: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method parseInt(String) in the type Integer is not applicable for the arguments (Object)
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     Integer id = Integer.parseInt(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     if (sesion.getAttribute("usuario") != null) {   
+15: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:09:39.160 GRAVE [http-nio-8080-exec-18] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method parseString(Object) is undefined for the type String
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     String id_string = String.parseString(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method parseString(Object) is undefined for the type String
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     String id_string = String.parseString(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:12:32.109 GRAVE [http-nio-8080-exec-21] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:12:35.954 GRAVE [http-nio-8080-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:12:47.498 GRAVE [http-nio-8080-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:15:52.239 GRAVE [http-nio-8080-exec-28] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:15:53.262 GRAVE [http-nio-8080-exec-32] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:15:53.826 GRAVE [http-nio-8080-exec-31] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:15:54.058 GRAVE [http-nio-8080-exec-27] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:15:54.322 GRAVE [http-nio-8080-exec-24] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:15:54.578 GRAVE [http-nio-8080-exec-26] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:15:54.823 GRAVE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:15:55.084 GRAVE [http-nio-8080-exec-25] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:15:58.986 GRAVE [http-nio-8080-exec-33] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:17:57.643 GRAVE [http-nio-8080-exec-37] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar"));
+13: 
+14:     Integer id = Integer.parseInt(id_string.trim());
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:19:43.599 GRAVE [http-nio-8080-exec-33] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method trim() is undefined for the type Object
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar").trim());
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method trim() is undefined for the type Object
+9: 
+10:     HttpSession sesion = request.getSession();
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar").trim());
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:20:38.375 GRAVE [http-nio-8080-exec-39] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = String.valueOf(sesion.getAttribute("usuario_id_actualizar")).trim();
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:24:19.413 GRAVE [http-nio-8080-exec-46] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [14]
+
+11: 
+12:     String id_string = Objects.toString(sesion.getAttribute("usuario_id_actualizar")).trim();
+13: 
+14:     Integer id = Integer.parseInt(id_string);
+15: 
+16:     if (sesion.getAttribute("usuario") != null) {   
+17: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:144)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:25:24.315 GRAVE [http-nio-8080-exec-48] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [15]
+
+12: 
+13:     String id_string = Objects.toString(sesion.getAttribute("usuario_id_actualizar")).trim();
+14: 
+15:     Integer id = Integer.parseInt(id_string);
+16: 
+17:     if (sesion.getAttribute("usuario") != null) {   
+18: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:147)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:25:25.148 GRAVE [http-nio-8080-exec-45] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [15]
+
+12: 
+13:     String id_string = Objects.toString(sesion.getAttribute("usuario_id_actualizar")).trim();
+14: 
+15:     Integer id = Integer.parseInt(id_string);
+16: 
+17:     if (sesion.getAttribute("usuario") != null) {   
+18: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:147)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:26:14.403 GRAVE [http-nio-8080-exec-50] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/views/menu_actualizacion_usuario.jsp] en línea [15]
+
+12: 
+13:     String id_string = Objects.toString(sesion.getAttribute("usuario_id_actualizar"));
+14: 
+15:     Integer id = Integer.parseInt(id_string.trim());
+16: 
+17:     if (sesion.getAttribute("usuario") != null) {   
+18: 
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: For input string: "null"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+		at java.base/java.lang.Integer.parseInt(Integer.java:661)
+		at java.base/java.lang.Integer.parseInt(Integer.java:777)
+		at org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp._jspService(menu_005factualizacion_005fusuario_jsp.java:147)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:28:53.034 GRAVE [http-nio-8080-exec-26] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+44: 
+45:     <form action="actualizar_usuario.jsp" method="post">
+46:         <input type="hidden" name="nombres" value="nombres">
+47:         <input type="hidden" name="id" value="<%= id %>">
+48:         <button type="submit">Actualizar Nombres</button>
+49:     </form>
+50: 
+
+
+Ha tenido lugar un error en la línea: [53] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+50: 
+51:     <form action="actualizar_usuario.jsp" method="post">
+52:         <input type="hidden" name="apellidos" value="apellidos">
+53:         <input type="hidden" name="id" value="<%= id %>">
+54:         <button type="submit">Actualizar Apellidos</button>
+55:     </form>
+56: 
+
+
+Ha tenido lugar un error en la línea: [59] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+56: 
+57:     <form action="actualizar_usuario.jsp" method="post">
+58:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+59:         <input type="hidden" name="id" value="<%= id %>">
+60:         <button type="submit">Actualizar Tipo de Documento</button>
+61:     </form>
+62: 
+
+
+Ha tenido lugar un error en la línea: [65] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+62: 
+63:     <form action="actualizar_usuario.jsp" method="post">
+64:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+65:         <input type="hidden" name="id" value="<%= id %>">
+66:         <button type="submit">Actualizar Número de Documento</button>
+67:     </form>
+68: 
+
+
+Ha tenido lugar un error en la línea: [71] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+68: 
+69:     <form action="actualizar_usuario.jsp" method="post">
+70:         <input type="hidden" name="telefono" value="telefono">
+71:         <input type="hidden" name="id" value="<%= id %>">
+72:         <button type="submit">Actualizar Teléfono</button>
+73:     </form>
+74: 
+
+
+Ha tenido lugar un error en la línea: [77] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+74: 
+75:     <form action="actualizar_usuario.jsp" method="post">
+76:         <input type="hidden" name="rol" value="rol">
+77:         <input type="hidden" name="id" value="<%= id %>">
+78:         <button type="submit">Actualizar Rol</button>
+79:     </form>
+80: 
+
+
+Ha tenido lugar un error en la línea: [83] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+80: 
+81:     <form action="actualizar_usuario.jsp" method="post">
+82:         <input type="hidden" name="usuario" value="usuario">
+83:         <input type="hidden" name="id" value="<%= id %>">
+84:         <button type="submit">Actualizar Usuario</button>
+85:     </form>
+86: 
+
+
+Ha tenido lugar un error en la línea: [89] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+86: 
+87:     <form action="actualizar_usuario.jsp" method="post">
+88:         <input type="hidden" name="contraseña" value="contraseña">
+89:         <input type="hidden" name="id" value="<%= id %>">
+90:         <button type="submit">Actualizar Contraseña</button>
+91:     </form>
+92: </body>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+44: 
+45:     <form action="actualizar_usuario.jsp" method="post">
+46:         <input type="hidden" name="nombres" value="nombres">
+47:         <input type="hidden" name="id" value="<%= id %>">
+48:         <button type="submit">Actualizar Nombres</button>
+49:     </form>
+50: 
+
+
+Ha tenido lugar un error en la línea: [53] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+50: 
+51:     <form action="actualizar_usuario.jsp" method="post">
+52:         <input type="hidden" name="apellidos" value="apellidos">
+53:         <input type="hidden" name="id" value="<%= id %>">
+54:         <button type="submit">Actualizar Apellidos</button>
+55:     </form>
+56: 
+
+
+Ha tenido lugar un error en la línea: [59] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+56: 
+57:     <form action="actualizar_usuario.jsp" method="post">
+58:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+59:         <input type="hidden" name="id" value="<%= id %>">
+60:         <button type="submit">Actualizar Tipo de Documento</button>
+61:     </form>
+62: 
+
+
+Ha tenido lugar un error en la línea: [65] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+62: 
+63:     <form action="actualizar_usuario.jsp" method="post">
+64:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+65:         <input type="hidden" name="id" value="<%= id %>">
+66:         <button type="submit">Actualizar Número de Documento</button>
+67:     </form>
+68: 
+
+
+Ha tenido lugar un error en la línea: [71] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+68: 
+69:     <form action="actualizar_usuario.jsp" method="post">
+70:         <input type="hidden" name="telefono" value="telefono">
+71:         <input type="hidden" name="id" value="<%= id %>">
+72:         <button type="submit">Actualizar Teléfono</button>
+73:     </form>
+74: 
+
+
+Ha tenido lugar un error en la línea: [77] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+74: 
+75:     <form action="actualizar_usuario.jsp" method="post">
+76:         <input type="hidden" name="rol" value="rol">
+77:         <input type="hidden" name="id" value="<%= id %>">
+78:         <button type="submit">Actualizar Rol</button>
+79:     </form>
+80: 
+
+
+Ha tenido lugar un error en la línea: [83] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+80: 
+81:     <form action="actualizar_usuario.jsp" method="post">
+82:         <input type="hidden" name="usuario" value="usuario">
+83:         <input type="hidden" name="id" value="<%= id %>">
+84:         <button type="submit">Actualizar Usuario</button>
+85:     </form>
+86: 
+
+
+Ha tenido lugar un error en la línea: [89] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+86: 
+87:     <form action="actualizar_usuario.jsp" method="post">
+88:         <input type="hidden" name="contraseña" value="contraseña">
+89:         <input type="hidden" name="id" value="<%= id %>">
+90:         <button type="submit">Actualizar Contraseña</button>
+91:     </form>
+92: </body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:31:42.051 GRAVE [http-nio-8080-exec-59] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [37] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method print(boolean) in the type JspWriter is not applicable for the arguments (void)
+34: 
+35: %>
+36: 
+37: <h1> <%= out.print(id); %> </h1>
+38: 
+39: <!DOCTYPE html>
+40: <html lang="es">
+
+
+Ha tenido lugar un error en la línea: [37] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+Syntax error on token ";", delete this token
+34: 
+35: %>
+36: 
+37: <h1> <%= out.print(id); %> </h1>
+38: 
+39: <!DOCTYPE html>
+40: <html lang="es">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [37] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method print(boolean) in the type JspWriter is not applicable for the arguments (void)
+34: 
+35: %>
+36: 
+37: <h1> <%= out.print(id); %> </h1>
+38: 
+39: <!DOCTYPE html>
+40: <html lang="es">
+
+
+Ha tenido lugar un error en la línea: [37] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+Syntax error on token ";", delete this token
+34: 
+35: %>
+36: 
+37: <h1> <%= out.print(id); %> </h1>
+38: 
+39: <!DOCTYPE html>
+40: <html lang="es">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:32:44.859 GRAVE [http-nio-8080-exec-60] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [46] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method print(boolean) in the type JspWriter is not applicable for the arguments (void)
+43: </head>
+44: <body>
+45: 
+46: <h1> <%= out.print(id) %> </h1> 
+47: 
+48:     <h1>¿QUE DATO DEL USUARIO QUIERES ACTUALIZAR?</h1>
+49: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [46] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+The method print(boolean) in the type JspWriter is not applicable for the arguments (void)
+43: </head>
+44: <body>
+45: 
+46: <h1> <%= out.print(id) %> </h1> 
+47: 
+48:     <h1>¿QUE DATO DEL USUARIO QUIERES ACTUALIZAR?</h1>
+49: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:47:07.143 GRAVE [http-nio-8080-exec-103] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:48:13.279 GRAVE [http-nio-8080-exec-106] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:48:14.303 GRAVE [http-nio-8080-exec-114] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:48:23.066 GRAVE [http-nio-8080-exec-113] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:48:26.007 GRAVE [http-nio-8080-exec-107] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:48:26.623 GRAVE [http-nio-8080-exec-109] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.views.menu_005factualizacion_005fusuario_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:48:27.385 GRAVE [http-nio-8080-exec-108] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:48:46.156 GRAVE [http-nio-8080-exec-111] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [48] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+45: 
+46:     <form action="actualizar_usuario.jsp" method="post">
+47:         <input type="hidden" name="nombres" value="nombres">
+48:         <input type="hidden" name="id" value="<%= id %>">
+49:         <button type="submit">Actualizar Nombres</button>
+50:     </form>
+51: 
+
+
+Ha tenido lugar un error en la línea: [54] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+51: 
+52:     <form action="actualizar_usuario.jsp" method="post">
+53:         <input type="hidden" name="apellidos" value="apellidos">
+54:         <input type="hidden" name="id" value="<%= id %>">
+55:         <button type="submit">Actualizar Apellidos</button>
+56:     </form>
+57: 
+
+
+Ha tenido lugar un error en la línea: [60] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+57: 
+58:     <form action="actualizar_usuario.jsp" method="post">
+59:         <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+60:         <input type="hidden" name="id" value="<%= id %>">
+61:         <button type="submit">Actualizar Tipo de Documento</button>
+62:     </form>
+63: 
+
+
+Ha tenido lugar un error en la línea: [66] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+63: 
+64:     <form action="actualizar_usuario.jsp" method="post">
+65:         <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+66:         <input type="hidden" name="id" value="<%= id %>">
+67:         <button type="submit">Actualizar Número de Documento</button>
+68:     </form>
+69: 
+
+
+Ha tenido lugar un error en la línea: [72] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+69: 
+70:     <form action="actualizar_usuario.jsp" method="post">
+71:         <input type="hidden" name="telefono" value="telefono">
+72:         <input type="hidden" name="id" value="<%= id %>">
+73:         <button type="submit">Actualizar Teléfono</button>
+74:     </form>
+75: 
+
+
+Ha tenido lugar un error en la línea: [78] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+75: 
+76:     <form action="actualizar_usuario.jsp" method="post">
+77:         <input type="hidden" name="rol" value="rol">
+78:         <input type="hidden" name="id" value="<%= id %>">
+79:         <button type="submit">Actualizar Rol</button>
+80:     </form>
+81: 
+
+
+Ha tenido lugar un error en la línea: [84] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+81: 
+82:     <form action="actualizar_usuario.jsp" method="post">
+83:         <input type="hidden" name="usuario" value="usuario">
+84:         <input type="hidden" name="id" value="<%= id %>">
+85:         <button type="submit">Actualizar Usuario</button>
+86:     </form>
+87: 
+
+
+Ha tenido lugar un error en la línea: [90] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+id cannot be resolved to a variable
+87: 
+88:     <form action="actualizar_usuario.jsp" method="post">
+89:         <input type="hidden" name="contraseña" value="contraseña">
+90:         <input type="hidden" name="id" value="<%= id %>">
+91:         <button type="submit">Actualizar Contraseña</button>
+92:     </form>
+93: </body>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 21:51:26.487 GRAVE [http-nio-8080-exec-124] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+Duplicate local variable id
+18: 
+19:         try {
+20: 
+21:            Integer id = Integer.parseInt(id_string.trim());
+22: 
+23:         } catch (NumberFormatException e) {
+24: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/views/menu_actualizacion_usuario.jsp]
+Duplicate local variable id
+18: 
+19:         try {
+20: 
+21:            Integer id = Integer.parseInt(id_string.trim());
+22: 
+23:         } catch (NumberFormatException e) {
+24: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 22:05:51.341 GRAVE [http-nio-8080-exec-153] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/actualizar_usuario.jsp]
+Objects cannot be resolved
+10: 
+11:     HttpSession sesion = request.getSession();
+12: 
+13:     String campoActualizar = Objects.toString(request.getParameter("campo_actualizar")); 
+14: 
+15:     String id_string = Objects.toString(request.getParameter("id"));
+16: 
+
+
+Ha tenido lugar un error en la línea: [15] en el archivo jsp: [/views/actualizar_usuario.jsp]
+Objects cannot be resolved
+12: 
+13:     String campoActualizar = Objects.toString(request.getParameter("campo_actualizar")); 
+14: 
+15:     String id_string = Objects.toString(request.getParameter("id"));
+16: 
+17:     Integer id_integer = null;
+18: 
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campo_actualizar cannot be resolved to a variable
+16: 
+17:     Integer id_integer = null;
+18: 
+19:     if (id_string != null && campo_actualizar != null) {
+20: 
+21:         try {
+22: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/views/actualizar_usuario.jsp]
+Objects cannot be resolved
+10: 
+11:     HttpSession sesion = request.getSession();
+12: 
+13:     String campoActualizar = Objects.toString(request.getParameter("campo_actualizar")); 
+14: 
+15:     String id_string = Objects.toString(request.getParameter("id"));
+16: 
+
+
+Ha tenido lugar un error en la línea: [15] en el archivo jsp: [/views/actualizar_usuario.jsp]
+Objects cannot be resolved
+12: 
+13:     String campoActualizar = Objects.toString(request.getParameter("campo_actualizar")); 
+14: 
+15:     String id_string = Objects.toString(request.getParameter("id"));
+16: 
+17:     Integer id_integer = null;
+18: 
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campo_actualizar cannot be resolved to a variable
+16: 
+17:     Integer id_integer = null;
+18: 
+19:     if (id_string != null && campo_actualizar != null) {
+20: 
+21:         try {
+22: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 22:06:45.440 GRAVE [http-nio-8080-exec-151] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campo_actualizar cannot be resolved to a variable
+17: 
+18:     Integer id_integer = null;
+19: 
+20:     if (id_string != null && campo_actualizar != null) {
+21: 
+22:         try {
+23: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campo_actualizar cannot be resolved to a variable
+17: 
+18:     Integer id_integer = null;
+19: 
+20:     if (id_string != null && campo_actualizar != null) {
+21: 
+22:         try {
+23: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+03-Dec-2023 22:11:23.961 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+03-Dec-2023 22:11:23.961 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

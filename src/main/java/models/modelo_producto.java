@@ -158,7 +158,7 @@ public class modelo_producto {
 
     // creamos es metodo insertar_producto
 
-    public void insertar_producto(String marca, Boolean estado, String nombre, String descripcion, Integer cantidad, Integer medida, Integer id_categoria, byte[] imagen) {
+    public boolean insertar_producto(String marca, Boolean estado, String nombre, String descripcion, Integer cantidad, Integer medida, Integer id_categoria, byte[] imagen) {
 
         Connection connection = null;
         PreparedStatement ps = null;
@@ -233,11 +233,11 @@ public class modelo_producto {
 
         }
 
-        resultado = false;
+        return false;
 
     }
 
-    public ArrayList<modelo_producto> productos_categoria () {
+    public ArrayList<modelo_producto> productos_categoria (Integer id_categoria_recibido) {
 
         ArrayList<modelo_producto> productos_categoria = new ArrayList<>();
         Connection connection = null;
@@ -253,7 +253,7 @@ public class modelo_producto {
                 String sql = "call read_productos_categoria(?)";
                 ps = connection.prepareStatement(sql);
 
-                ps.setInt(1, id_categoria);
+                ps.setInt(1, id_categoria_recibido);
 
                 rs = ps.executeQuery();
 

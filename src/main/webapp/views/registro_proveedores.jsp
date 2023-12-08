@@ -4,35 +4,6 @@
 <%@ page import="jakarta.servlet.http.HttpSession" %>
 <%@ page import="jakarta.servlet.http.HttpServletRequest" %>
 <%@ page import="jakarta.servlet.RequestDispatcher" %>
-<%@ page import="org.openqa.selenium.WebDriver" %>
-<%@ page import="org.openqa.selenium.support.events.WebDriverEventListener" %>
-
-<%
-    WebDriver driver = (WebDriver) session.getAttribute("driver");
-
-    driver.onPageLoad(new Runnable() {
-
-        @Override
-        public void run() {
-
-            driver.clearHistory();
-
-        }
-        
-    });
-
-    driver.onPageLoad(new Runnable() {
-
-        @Override
-        public void run() {
-
-            driver.deleteAllCookies();
-
-        }
-
-    });
-
-%>
 
 <% 
 
@@ -57,7 +28,7 @@
 
 <h2>Registro de Producto</h2>
 
-    <form action="/sapphire_inventory/registro_proveedor_servlet" method="POST" enctype="multipart/form-data">
+    <form action="/sapphire_inventory/registro_proveedor_servlet" method="POST">
 
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" required>

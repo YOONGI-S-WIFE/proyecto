@@ -38,11 +38,6 @@ public class login_servlet extends HttpServlet {
     protected void doPost (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 
-        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-        response.setHeader("Pragma", "no-cache");
-        response.setHeader("Expires", "0");
-        response.setHeader("Window-target", "_top");
-
         contrasenna_recibida = request.getParameter("contrasena");
         usuario_recibido = request.getParameter("usuario");
         rol = request.getParameter("rol");

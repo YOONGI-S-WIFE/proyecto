@@ -1,0 +1,1374 @@
+30-Nov-2023 16:46:46.060 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Nov-2023 16:46:46.060 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Nov-2023 16:46:46.065 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1c63b39a')
+30-Nov-2023 16:47:04.715 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Nov-2023 16:47:04.715 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Nov-2023 16:48:12.620 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Nov-2023 16:48:12.620 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Nov-2023 16:48:12.627 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@489e1887')
+30-Nov-2023 16:48:55.139 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Nov-2023 16:48:55.139 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Nov-2023 17:24:35.559 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Nov-2023 17:24:35.559 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Nov-2023 17:24:35.563 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@71cdde0c')
+30-Nov-2023 17:27:48.034 GRAVE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+12: 
+13:         driver.manage().deleteAllCookies();
+14: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+12: 
+13:         driver.manage().deleteAllCookies();
+14: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+30-Nov-2023 17:30:35.230 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Nov-2023 17:30:35.230 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Nov-2023 19:05:09.084 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Nov-2023 19:05:09.084 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Nov-2023 19:05:09.087 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1ee04ff6')
+30-Nov-2023 19:05:45.517 GRAVE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+12: 
+13:         driver.manage().deleteAllCookies();
+14: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+12: 
+13:         driver.manage().deleteAllCookies();
+14: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+30-Nov-2023 19:29:58.509 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Nov-2023 19:29:58.509 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

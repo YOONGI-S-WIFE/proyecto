@@ -13,7 +13,7 @@ public class Conectar {
     private static final String data_base = "jdbc:mysql://localhost/sapphire_inventory";
     private static final String user = "root";
     private static final String pass = "";
-    private static final String driver = "com.mysql.jdbc.Driver";
+    private static final String driver = "com.mysql.cj.jdbc.Driver";
 
     // Creamos el método para conectarnos a la base de datos el cual devolverá un
     // objeto de tipo Connection

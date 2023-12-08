@@ -4,39 +4,31 @@
 <%@ page import="jakarta.servlet.http.HttpSession" %>
 <%@ page import="jakarta.servlet.http.HttpServletRequest" %>
 <%@ page import="jakarta.servlet.RequestDispatcher" %>
-<%@ page import="org.openqa.selenium.WebDriver" %>
-<%@ page import="org.openqa.selenium.support.events.WebDriverEventListener" %>
-
-<%
-    WebDriver driver = (WebDriver) session.getAttribute("driver");
-
-    driver.onPageLoad(new Runnable() {
-
-        @Override
-        public void run() {
-
-            driver.clearHistory();
-
-        }
-        
-    });
-
-    driver.onPageLoad(new Runnable() {
-
-        @Override
-        public void run() {
-
-            driver.deleteAllCookies();
-
-        }
-
-    });
-
-%>
+<%@ page import="java.util.Objects" %>
 
 <% 
 
     HttpSession sesion = request.getSession();
+
+    String id_string = Objects.toString(request.getParameter("usuario_id_actualizar"));
+
+    Integer id = null;
+
+    if (id_string != null) {
+
+        try {
+
+           id = Integer.parseInt(id_string.trim());
+
+        } catch (NumberFormatException e) {
+
+            e.printStackTrace(); 
+
+        }
+
+    } else {
+
+    }
 
     if (sesion.getAttribute("usuario") != null) {   
 
@@ -50,45 +42,54 @@
     <title>Detalles de Usuario</title>
 </head>
 <body>
+
     <h1>¿QUE DATO DEL USUARIO QUIERES ACTUALIZAR?</h1>
 
-    <form action="actualizar_usuario.jsp" method="post">
-        <input type="hidden" name="nombres" value="nombres">
+    <form action="actualizar_usuario.jsp" method="get">
+        <input type="hidden" name="campoActualizar" value="nombres">
+        <input type="hidden" name="id" value="<%= id %>">
         <button type="submit">Actualizar Nombres</button>
     </form>
 
-    <form action="actualizar_usuario.jsp" method="post">
-        <input type="hidden" name="apellidos" value="apellidos">
+    <form action="actualizar_usuario.jsp" method="get">
+        <input type="hidden" name="campoActualizar" value="apellidos">
+        <input type="hidden" name="id" value="<%= id %>">
         <button type="submit">Actualizar Apellidos</button>
     </form>
 
-    <form action="actualizar_usuario.jsp" method="post">
-        <input type="hidden" name="tipoDocumento" value="tipoDocumento">
+    <form action="actualizar_usuario.jsp" method="get">
+        <input type="hidden" name="campoActualizar" value="tipoDocumento">
+        <input type="hidden" name="id" value="<%= id %>">
         <button type="submit">Actualizar Tipo de Documento</button>
     </form>
 
-    <form action="actualizar_usuario.jsp" method="post">
-        <input type="hidden" name="numeroDocumento" value="numeroDocumento">
+    <form action="actualizar_usuario.jsp" method="get">
+        <input type="hidden" name="campoActualizar" value="numeroDocumento">
+        <input type="hidden" name="id" value="<%= id %>">
         <button type="submit">Actualizar Número de Documento</button>
     </form>
 
-    <form action="actualizar_usuario.jsp" method="post">
-        <input type="hidden" name="telefono" value="telefono">
+    <form action="actualizar_usuario.jsp" method="get">
+        <input type="hidden" name="campoActualizar" value="telefono">
+        <input type="hidden" name="id" value="<%= id %>">
         <button type="submit">Actualizar Teléfono</button>
     </form>
 
-    <form action="actualizar_usuario.jsp" method="post">
-        <input type="hidden" name="rol" value="rol">
+    <form action="actualizar_usuario.jsp" method="get">
+        <input type="hidden" name="campoActualizar" value="rol">
+        <input type="hidden" name="id" value="<%= id %>">
         <button type="submit">Actualizar Rol</button>
     </form>
 
-    <form action="actualizar_usuario.jsp" method="post">
-        <input type="hidden" name="usuario" value="usuario">
+    <form action="actualizar_usuario.jsp" method="get">
+        <input type="hidden" name="campoActualizar" value="usuario">
+        <input type="hidden" name="id" value="<%= id %>">
         <button type="submit">Actualizar Usuario</button>
     </form>
 
-    <form action="actualizar_usuario.jsp" method="post">
-        <input type="hidden" name="contraseña" value="contraseña">
+    <form action="actualizar_usuario.jsp" method="get">
+        <input type="hidden" name="campoActualizar" value="contraseña">
+        <input type="hidden" name="id" value="<%= id %>">
         <button type="submit">Actualizar Contraseña</button>
     </form>
 </body>

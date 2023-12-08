@@ -80,7 +80,7 @@ public class modelo_categoria {
 
     // metodos de la clase
 
-    public void insertar_categoria (String nombre, String descripcion, byte[] imagen) {
+    public boolean insertar_categoria (String nombre, String descripcion, byte[] imagen) {
 
         Connection connection = null;
         PreparedStatement ps = null;
@@ -142,6 +142,8 @@ public class modelo_categoria {
             }
 
         }
+
+        return false;
         
     }
 
@@ -223,7 +225,7 @@ public class modelo_categoria {
 
 }
 
-public void eliminar_categoria (Integer id_categoria_recibido) {
+public boolean eliminar_categoria (Integer id_categoria_recibido) {
 
     Connection connection = null;
     PreparedStatement ps = null;
@@ -280,6 +282,8 @@ public void eliminar_categoria (Integer id_categoria_recibido) {
         }
 
     }
+
+    return false;
     
 }
     

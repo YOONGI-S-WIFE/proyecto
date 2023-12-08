@@ -20,11 +20,6 @@ public class eliminar_usuario_servlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        resp.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-        resp.setHeader("Pragma", "no-cache");
-        resp.setHeader("Expires", "0");
-        resp.setHeader("Window-target", "_top");
-
         id_usuario = req.getParameter("usuario_id_eliminar");
 
         controlador.eliminar_usuario(id_usuario);

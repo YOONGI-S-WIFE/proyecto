@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 
-@WebServlet(name = "registro_producto_servlet", urlPatterns = {"/registro_producto_servlet"})
+@WebServlet("/registro_producto_servlet")
 @MultipartConfig
 
 public class registro_producto_servlet extends HttpServlet {
@@ -37,11 +37,6 @@ public class registro_producto_servlet extends HttpServlet {
     @Override
     protected void doPost (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-
-        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-        response.setHeader("Pragma", "no-cache");
-        response.setHeader("Expires", "0");
-        response.setHeader("Window-target", "_top");
         
         controlador_producto controlador = new controlador_producto();
 

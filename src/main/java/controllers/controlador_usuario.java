@@ -1,8 +1,6 @@
 package controllers;
 
 import models.modelo_usuario;
-import servlets.registro_usuario_servlet;
-import java.util.ArrayList;
 
 // creamos la clase controlador_usuario
 
@@ -21,24 +19,10 @@ public class controlador_usuario {
     private String rol_usuario = null;
     private Integer tipo_documento_usuario_convertido = null;
     private Integer rol_usuario_convertido =  null;
-    private String resultado = null;
-    public ArrayList<modelo_usuario> mostrar_usuarios;
     
     // creamos el metodo constructor de la clase
 
 // creamos los getters y setters de cada atributo de la clase
-
-    public ArrayList<modelo_usuario> getMostrar_usuarios() {
-
-        return mostrar_usuarios;
-
-    }
-
-    public void setMostrar_usuarios(ArrayList<modelo_usuario> mostrar_usuarios) {
-
-        this.mostrar_usuarios = mostrar_usuarios;
-
-    }
 
     public Integer getRol_usuario_convertido() {
 
@@ -62,18 +46,6 @@ public class controlador_usuario {
 
         this.id_usuario = id_usuario;
 
-    }
-
-    public String getResultado() {
-
-        return resultado;
-        
-    }
-
-    public void setResultado(String resultado) {
-
-        this.resultado = resultado;
-        
     }
 
     public Integer getTipo_documento_usuario_convertido() {
@@ -188,11 +160,11 @@ public class controlador_usuario {
 
         modelo_usuario recibir = new modelo_usuario();
 
-        if (tipo_documento == "cedula") {
+        if ("cedula".equals(tipo_documento)) {
 
             tipo_documento_usuario_convertido = 1;
             
-        } else if (tipo_documento == "cedula_extranjeria") {
+        } else if ("cedula_extranjeria".equals(tipo_documento)) {
 
             tipo_documento_usuario_convertido = 2;
             
@@ -202,7 +174,7 @@ public class controlador_usuario {
             
         } 
 
-        if (rol_usuario == "administrador") {
+        if ("administrador".equals(rol_usuario)) {
 
             rol_usuario_convertido = 0;
             
@@ -220,20 +192,6 @@ public class controlador_usuario {
         recibir.setTipo_documento(tipo_documento_usuario_convertido);
         recibir.setUsuario(usuario);
         recibir.setNumero_documento_usuario(numero_documento_usuario);
-
-        if (recibir.insertar_usuario() == true) {
-
-            resultado = "usuario registrado con exito";
-
-            registro_usuario_servlet servlet = new registro_usuario_servlet();
-
-            servlet.setResultado(resultado);
-            
-        } else {
-
-            resultado = null;
-            
-        }
 
     }
 
@@ -262,6 +220,157 @@ public class controlador_usuario {
         modelo_usuario modelo = new modelo_usuario();
 
         modelo.delete_usuario(id_usuario);
+
+    }
+
+    public boolean actualizar_nombres_usuario (String nombres, String contraseña_administrador, Integer id_usuario, String usuario_en_sesion) {
+
+        modelo_usuario modelo = new modelo_usuario();
+
+        Boolean resultado = modelo.validar_contraseña(contraseña_administrador, usuario_en_sesion);
+
+        if (resultado == true) {
+
+            modelo.actualizar_nombres_usuario(nombres, id_usuario);
+
+            return true;
+            
+        }
+
+        return false;
+
+    }
+
+    public boolean actualizar_apellidos_usuario (String apellidos, String contraseña_administrador, Integer id_usuario, String usuario_en_sesion) {
+
+        modelo_usuario modelo = new modelo_usuario();
+
+        Boolean resultado = modelo.validar_contraseña(contraseña_administrador, usuario_en_sesion);
+
+        if (resultado == true) {
+
+            modelo.actualizar_apellidos_usuario(apellidos, id_usuario);
+
+            return true;
+            
+        }
+
+        return false;
+
+    }
+
+    public boolean actualizar_tipo_documento_usuario (Integer tipo_documento, String contraseña_administrador, Integer id_usuario, String usuario_en_sesion) {
+
+        modelo_usuario modelo = new modelo_usuario();
+
+        Boolean resultado = modelo.validar_contraseña(contraseña_administrador, usuario_en_sesion);
+
+        if (resultado == true) {
+
+            modelo.actualizar_tipo_documento_usuario(tipo_documento, id_usuario);
+
+            return true;
+            
+        }
+
+        return false;
+
+    }
+
+    public boolean actualizar_documento_usuario (String numero_documento, String contraseña_administrador, Integer id_usuario, String usuario_en_sesion) {
+
+        modelo_usuario modelo = new modelo_usuario();
+
+        Boolean resultado = modelo.validar_contraseña(contraseña_administrador, usuario_en_sesion);
+
+        if (resultado == true) {
+
+            modelo.actualizar_numero_documento_usuario(numero_documento, id_usuario);
+
+            return true;
+            
+        }
+
+        return false;
+    }
+
+    public boolean actualizar_telefono_usuario (String telefono, String contraseña_administrador, Integer id_usuario, String usuario_en_sesion) {
+
+        modelo_usuario modelo = new modelo_usuario();
+
+        Boolean resultado = modelo.validar_contraseña(contraseña_administrador, usuario_en_sesion);
+
+        if (resultado == true) {
+
+            modelo.actualizar_telefono_usuario(telefono, id_usuario);
+
+            return true;
+            
+        }
+
+        return false;
+
+    }
+
+    public boolean actualizar_rol_usuario (Integer rol, String contraseña_administrador, Integer id_usuario, String usuario_en_sesion) {
+
+        modelo_usuario modelo = new modelo_usuario();
+
+        Boolean resultado = modelo.validar_contraseña(contraseña_administrador, usuario_en_sesion);
+
+        if (resultado == true) {
+
+            modelo.actualizar_rol_usuario(id_usuario, id_usuario);
+
+            return true;
+            
+        }
+
+        return false;
+        
+    }
+
+    public boolean actualizar_usuario_usuario (String usuario, String contraseña_administrador, Integer id_usuario, String usuario_en_sesion) {
+
+        modelo_usuario modelo = new modelo_usuario();
+
+        Boolean resultado = modelo.validar_contraseña(contraseña_administrador, usuario_en_sesion);
+
+        if (resultado == true) {
+
+            modelo.actualizar_usuario_usuario(usuario, id_usuario);
+
+            return true;
+            
+        }
+
+        return false;
+
+    }
+
+    public boolean actualizar_contraseña_usuario (String contraseña, String confirmacion_contraseña, String contraseña_administrador, Integer id_usuario, String usuario_en_sesion) {
+
+        modelo_usuario modelo = new modelo_usuario();
+
+        Boolean resultado = modelo.validar_contraseña(contraseña_administrador, usuario_en_sesion);
+
+        if (resultado == true && contraseña.equals(confirmacion_contraseña)) {
+
+            modelo.actualizar_contraseña_usuario(contraseña, id_usuario);
+
+            return true;
+            
+        }
+
+        return false;
+
+    }
+
+    public Boolean validar_contraseña (String usuario, String contrasenna) {
+
+        modelo_usuario modelo = new modelo_usuario();
+
+        return modelo.validar_contraseña(usuario, contrasenna);
 
     }
 

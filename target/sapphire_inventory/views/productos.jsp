@@ -5,42 +5,18 @@
 <%@ page import="jakarta.servlet.http.HttpServletRequest" %>
 <%@ page import="jakarta.servlet.RequestDispatcher" %>
 <%@ page import="servlets.mostrar_productos_servlet" %>
-<%@ page import="org.openqa.selenium.WebDriver" %>
-<%@ page import="org.openqa.selenium.support.events.WebDriverEventListener" %>
-
-<%
-    WebDriver driver = (WebDriver) session.getAttribute("driver");
-
-    driver.onPageLoad(new Runnable() {
-
-        @Override
-        public void run() {
-
-            driver.clearHistory();
-
-        }
-        
-    });
-
-    driver.onPageLoad(new Runnable() {
-
-        @Override
-        public void run() {
-
-            driver.deleteAllCookies();
-
-        }
-
-    });
-
-%>
 
 <% 
 
     modelo_producto products = new modelo_producto();
+
+    String id_categoria_string = Objects.toString(request.getParameter("productos").trim());
+
+    Integer id_categoria = Integer.parseInt(id_categoria_string);
+    
     HttpSession sesion = request.getSession();
 
-    ArrayList<modelo_producto> productos =  products.productos_categoria();
+    ArrayList<modelo_producto> productos =  products.productos_categoria(id_categoria);
 
     if (sesion.getAttribute("usuario") != null) {   
 
@@ -56,15 +32,15 @@
 
 <body>
 
-    <button><a href="registro_usuario.jsp">Registrar usuario</a></button> 
+    <button><a href="views/registro_usuario.jsp">Registrar usuario</a></button> 
 
-    <button><a href="registro_producto.jsp">Registrar producto</a></button> 
+    <button><a href="views/registro_producto.jsp">Registrar producto</a></button> 
 
-    <button><a href="registro_categoria.jsp">Registrar categoria</a></button> 
+    <button><a href="views/registro_categoria.jsp">Registrar categoria</a></button> 
 
-    <button><a href="venta.jsp">Registrar venta</a></button> 
+    <button><a href="views/venta.jsp">Registrar venta</a></button> 
 
-    <button><a href="entrada.jsp">Registrar entada</a></button> 
+    <button><a href="views/entrada.jsp">Registrar entada</a></button> 
 
     <form action="/sapphire_inventory/mostrar_usuarios_servlet" method="GET">
     <input value="usuarios" name ="usuarios" type = "submit">
@@ -82,8 +58,6 @@
 
         <% 
 
-        if (productos != null) {
-
             for (modelo_producto producto : productos) {
 
         %>
@@ -92,22 +66,12 @@
                         <img src="data:image/png;base64, <%= Base64.getEncoder().encodeToString(producto.getImagen()) %>" alt="Imagen de la categoría">
                         <p><%= producto.getDescripcion_producto() %></p>
                         <br>
+
                         <button onclick="window.location.href='./views/actualizar_categoria.jsp?id=<%= producto.getId_producto() %>'">Actualizar producto</button>
+                    
                     </div>
 
-        <%
-            }
-
-            } else {
-
-        %>
-
-            <p> <% out.print("no hay categorias disponibles"); %></p>
-
-        <%
-            }
-        %>
-
+        <% } %>
     </div>
     
 </body>

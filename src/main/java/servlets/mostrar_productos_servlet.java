@@ -7,7 +7,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletResponse;
-import models.modelo_producto;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.annotation.WebServlet;
 
@@ -41,19 +40,6 @@ public class mostrar_productos_servlet extends HttpServlet {
     @Override
     protected void doPost (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-
-        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-        response.setHeader("Pragma", "no-cache");
-        response.setHeader("Expires", "0");
-        response.setHeader("Window-target", "_top");
-
-        id_categoria = Integer.parseInt(request.getParameter("productos").trim());
-
-        modelo_producto modelo = new modelo_producto();
-
-        modelo.setId_categoria(id_categoria);
-
-        modelo.productos_categoria();
 
         RequestDispatcher redireccion = request.getRequestDispatcher("views/productos.jsp");
         redireccion.forward(request, response);

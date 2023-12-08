@@ -1,0 +1,2230 @@
+02-Dec-2023 12:30:13.585 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-Dec-2023 12:30:13.585 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-Dec-2023 12:30:13.589 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@75381b61')
+02-Dec-2023 12:31:12.487 GRAVE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+12: 
+13:         driver.manage().deleteAllCookies();
+14: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+12: 
+13:         driver.manage().deleteAllCookies();
+14: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+02-Dec-2023 12:31:14.924 GRAVE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+02-Dec-2023 12:31:16.946 GRAVE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+12: 
+13:         driver.manage().deleteAllCookies();
+14: 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The method addEventListener(new WebDriverEventListener(){}) is undefined for the type WebDriver
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateBack(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetScreenshotAs(OutputType<X>, X)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterGetText(WebElement, WebDriver, String)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterChangeValueOf(WebElement, WebDriver, CharSequence[])
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateForward(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeClickOn(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterScript(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterSwitchToWindow(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetScreenshotAs(OutputType<X>)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.onException(Throwable, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeFindBy(By, WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterNavigateTo(String, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeGetText(WebElement, WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertAccept(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.beforeNavigateRefresh(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [8] en el archivo jsp: [/index.jsp]
+The type new WebDriverEventListener(){} must implement the inherited abstract method WebDriverEventListener.afterAlertDismiss(WebDriver)
+5: <%
+6:     WebDriver driver = (WebDriver) session.getAttribute("driver");
+7: 
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/index.jsp]
+The method onPageLoad(WebDriver) of type new WebDriverEventListener(){} must override or implement a supertype method
+8:     driver.addEventListener(new WebDriverEventListener() {
+9: 
+10:         @Override
+11:         public void onPageLoad(WebDriver driver) {
+12: 
+13:         driver.manage().deleteAllCookies();
+14: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+02-Dec-2023 19:14:38.914 GRAVE [http-nio-8080-exec-63] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [26] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved to a variable
+23: 
+24:     <form action="sapphire_inventory/actualizar_usuario_servlet" method="post">
+25:     
+26:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+27:         
+28:         <label for="nombres">Nombres:</label>
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [29] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+26:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+27:         
+28:         <label for="nombres">Nombres:</label>
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+30: 
+31:         <label for="apellidos">Apellidos:</label>
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [29] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+26:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+27:         
+28:         <label for="nombres">Nombres:</label>
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+30: 
+31:         <label for="apellidos">Apellidos:</label>
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [32] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+30: 
+31:         <label for="apellidos">Apellidos:</label>
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+33: 
+34:         <label for="tipoDocumento">Tipo de Documento:</label>
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [32] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+30: 
+31:         <label for="apellidos">Apellidos:</label>
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+33: 
+34:         <label for="tipoDocumento">Tipo de Documento:</label>
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [35] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+33: 
+34:         <label for="tipoDocumento">Tipo de Documento:</label>
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+36: 
+37:         <label for="numeroDocumento">Número de Documento:</label>
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [35] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+33: 
+34:         <label for="tipoDocumento">Tipo de Documento:</label>
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+36: 
+37:         <label for="numeroDocumento">Número de Documento:</label>
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+36: 
+37:         <label for="numeroDocumento">Número de Documento:</label>
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="telefono">Teléfono:</label>
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+36: 
+37:         <label for="numeroDocumento">Número de Documento:</label>
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="telefono">Teléfono:</label>
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [41] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="telefono">Teléfono:</label>
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="rol">Rol:</label>
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [41] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="telefono">Teléfono:</label>
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="rol">Rol:</label>
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="rol">Rol:</label>
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="usuario">Usuario:</label>
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="rol">Rol:</label>
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="usuario">Usuario:</label>
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="usuario">Usuario:</label>
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="contraseña">Contraseña:</label>
+50:         <input type="password" id="contraseña" name="contraseña" value="<%= usuario.getContraseña() %>" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="usuario">Usuario:</label>
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="contraseña">Contraseña:</label>
+50:         <input type="password" id="contraseña" name="contraseña" value="<%= usuario.getContraseña() %>" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="contraseña">Contraseña:</label>
+50:         <input type="password" id="contraseña" name="contraseña" value="<%= usuario.getContraseña() %>" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+51: 
+52:         <button type="submit">Guardar Cambios</button>
+53:     </form>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="contraseña">Contraseña:</label>
+50:         <input type="password" id="contraseña" name="contraseña" value="<%= usuario.getContraseña() %>" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+51: 
+52:         <button type="submit">Guardar Cambios</button>
+53:     </form>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [26] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved to a variable
+23: 
+24:     <form action="sapphire_inventory/actualizar_usuario_servlet" method="post">
+25:     
+26:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+27:         
+28:         <label for="nombres">Nombres:</label>
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [29] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+26:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+27:         
+28:         <label for="nombres">Nombres:</label>
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+30: 
+31:         <label for="apellidos">Apellidos:</label>
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [29] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+26:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+27:         
+28:         <label for="nombres">Nombres:</label>
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+30: 
+31:         <label for="apellidos">Apellidos:</label>
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [32] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+30: 
+31:         <label for="apellidos">Apellidos:</label>
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+33: 
+34:         <label for="tipoDocumento">Tipo de Documento:</label>
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [32] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+29:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+30: 
+31:         <label for="apellidos">Apellidos:</label>
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+33: 
+34:         <label for="tipoDocumento">Tipo de Documento:</label>
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [35] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+33: 
+34:         <label for="tipoDocumento">Tipo de Documento:</label>
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+36: 
+37:         <label for="numeroDocumento">Número de Documento:</label>
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [35] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+32:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+33: 
+34:         <label for="tipoDocumento">Tipo de Documento:</label>
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+36: 
+37:         <label for="numeroDocumento">Número de Documento:</label>
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+36: 
+37:         <label for="numeroDocumento">Número de Documento:</label>
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="telefono">Teléfono:</label>
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+35:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+36: 
+37:         <label for="numeroDocumento">Número de Documento:</label>
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="telefono">Teléfono:</label>
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [41] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="telefono">Teléfono:</label>
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="rol">Rol:</label>
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [41] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+38:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="telefono">Teléfono:</label>
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="rol">Rol:</label>
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="rol">Rol:</label>
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="usuario">Usuario:</label>
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+41:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="rol">Rol:</label>
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="usuario">Usuario:</label>
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="usuario">Usuario:</label>
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="contraseña">Contraseña:</label>
+50:         <input type="password" id="contraseña" name="contraseña" value="<%= usuario.getContraseña() %>" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+44:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="usuario">Usuario:</label>
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="contraseña">Contraseña:</label>
+50:         <input type="password" id="contraseña" name="contraseña" value="<%= usuario.getContraseña() %>" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="contraseña">Contraseña:</label>
+50:         <input type="password" id="contraseña" name="contraseña" value="<%= usuario.getContraseña() %>" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+51: 
+52:         <button type="submit">Guardar Cambios</button>
+53:     </form>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/actualizar_usuario.jsp]
+campoActualizar cannot be resolved
+47:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="contraseña">Contraseña:</label>
+50:         <input type="password" id="contraseña" name="contraseña" value="<%= usuario.getContraseña() %>" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+51: 
+52:         <button type="submit">Guardar Cambios</button>
+53:     </form>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+02-Dec-2023 20:44:28.567 GRAVE [http-nio-8080-exec-69] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+35:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+36:         
+37:         <label for="nombres">Nombres:</label>
+38:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="apellidos">Apellidos:</label>
+41:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [41] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+38:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="apellidos">Apellidos:</label>
+41:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="tipoDocumento">Tipo de Documento:</label>
+44:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+41:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="tipoDocumento">Tipo de Documento:</label>
+44:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="numeroDocumento">Número de Documento:</label>
+47:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+44:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="numeroDocumento">Número de Documento:</label>
+47:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="telefono">Teléfono:</label>
+50:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+47:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="telefono">Teléfono:</label>
+50:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+51: 
+52:         <label for="rol">Rol:</label>
+53:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [53] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+50:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+51: 
+52:         <label for="rol">Rol:</label>
+53:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+54: 
+55:         <label for="usuario">Usuario:</label>
+56:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [56] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+53:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+54: 
+55:         <label for="usuario">Usuario:</label>
+56:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+57: 
+58:         <label for="contraseña">Contraseña:</label>
+59:         <input type="password" id="contraseña" name="contraseña" value="" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+35:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+36:         
+37:         <label for="nombres">Nombres:</label>
+38:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="apellidos">Apellidos:</label>
+41:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [41] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+38:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+39: 
+40:         <label for="apellidos">Apellidos:</label>
+41:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="tipoDocumento">Tipo de Documento:</label>
+44:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [44] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+41:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+42: 
+43:         <label for="tipoDocumento">Tipo de Documento:</label>
+44:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="numeroDocumento">Número de Documento:</label>
+47:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [47] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+44:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+45: 
+46:         <label for="numeroDocumento">Número de Documento:</label>
+47:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="telefono">Teléfono:</label>
+50:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+47:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+48: 
+49:         <label for="telefono">Teléfono:</label>
+50:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+51: 
+52:         <label for="rol">Rol:</label>
+53:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [53] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+50:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+51: 
+52:         <label for="rol">Rol:</label>
+53:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+54: 
+55:         <label for="usuario">Usuario:</label>
+56:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [56] en el archivo jsp: [/views/actualizar_usuario.jsp]
+usuario cannot be resolved
+53:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+54: 
+55:         <label for="usuario">Usuario:</label>
+56:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+57: 
+58:         <label for="contraseña">Contraseña:</label>
+59:         <input type="password" id="contraseña" name="contraseña" value="" <%= (campoActualizar.equals("contraseña")) ? "" : "readonly" %>><br>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+02-Dec-2023 20:48:03.245 GRAVE [http-nio-8080-exec-84] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [40] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getNombres() is undefined for the type modelo_usuario
+37:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+38:         
+39:         <label for="nombres">Nombres:</label>
+40:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+41: 
+42:         <label for="apellidos">Apellidos:</label>
+43:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getApellidos() is undefined for the type modelo_usuario
+40:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+41: 
+42:         <label for="apellidos">Apellidos:</label>
+43:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+44: 
+45:         <label for="tipoDocumento">Tipo de Documento:</label>
+46:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [46] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getTipoDocumento() is undefined for the type modelo_usuario
+43:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+44: 
+45:         <label for="tipoDocumento">Tipo de Documento:</label>
+46:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+47: 
+48:         <label for="numeroDocumento">Número de Documento:</label>
+49:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getNumeroDocumento() is undefined for the type modelo_usuario
+46:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+47: 
+48:         <label for="numeroDocumento">Número de Documento:</label>
+49:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+50: 
+51:         <label for="telefono">Teléfono:</label>
+52:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getTelefono() is undefined for the type modelo_usuario
+49:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+50: 
+51:         <label for="telefono">Teléfono:</label>
+52:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+53: 
+54:         <label for="rol">Rol:</label>
+55:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getRol() is undefined for the type modelo_usuario
+52:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+53: 
+54:         <label for="rol">Rol:</label>
+55:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+56: 
+57:         <label for="usuario">Usuario:</label>
+58:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [40] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getNombres() is undefined for the type modelo_usuario
+37:         <input type="hidden" name="campo_actualizar" value="<%= campoActualizar %>">
+38:         
+39:         <label for="nombres">Nombres:</label>
+40:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+41: 
+42:         <label for="apellidos">Apellidos:</label>
+43:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getApellidos() is undefined for the type modelo_usuario
+40:         <input type="text" id="nombres" name="nombres" value="<%= usuario.getNombres() %>" <%= (campoActualizar.equals("nombres")) ? "" : "readonly" %>><br>
+41: 
+42:         <label for="apellidos">Apellidos:</label>
+43:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+44: 
+45:         <label for="tipoDocumento">Tipo de Documento:</label>
+46:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [46] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getTipoDocumento() is undefined for the type modelo_usuario
+43:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+44: 
+45:         <label for="tipoDocumento">Tipo de Documento:</label>
+46:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+47: 
+48:         <label for="numeroDocumento">Número de Documento:</label>
+49:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getNumeroDocumento() is undefined for the type modelo_usuario
+46:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+47: 
+48:         <label for="numeroDocumento">Número de Documento:</label>
+49:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+50: 
+51:         <label for="telefono">Teléfono:</label>
+52:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getTelefono() is undefined for the type modelo_usuario
+49:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumeroDocumento() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+50: 
+51:         <label for="telefono">Teléfono:</label>
+52:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+53: 
+54:         <label for="rol">Rol:</label>
+55:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getRol() is undefined for the type modelo_usuario
+52:         <input type="text" id="telefono" name="telefono" value="<%= usuario.getTelefono() %>" <%= (campoActualizar.equals("telefono")) ? "" : "readonly" %>><br>
+53: 
+54:         <label for="rol">Rol:</label>
+55:         <input type="text" id="rol" name="rol" value="<%= usuario.getRol() %>" <%= (campoActualizar.equals("rol")) ? "" : "readonly" %>><br>
+56: 
+57:         <label for="usuario">Usuario:</label>
+58:         <input type="text" id="usuario" name="usuario" value="<%= usuario.getUsuario() %>" <%= (campoActualizar.equals("usuario")) ? "" : "readonly" %>><br>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+02-Dec-2023 20:51:35.978 GRAVE [http-nio-8080-exec-86] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/sapphire_inventory] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [46] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getTipoDocumento() is undefined for the type modelo_usuario
+43:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos_usuario() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+44: 
+45:         <label for="tipoDocumento">Tipo de Documento:</label>
+46:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+47: 
+48:         <label for="numeroDocumento">Número de Documento:</label>
+49:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumero_documento_usuario() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [46] en el archivo jsp: [/views/actualizar_usuario.jsp]
+The method getTipoDocumento() is undefined for the type modelo_usuario
+43:         <input type="text" id="apellidos" name="apellidos" value="<%= usuario.getApellidos_usuario() %>" <%= (campoActualizar.equals("apellidos")) ? "" : "readonly" %>><br>
+44: 
+45:         <label for="tipoDocumento">Tipo de Documento:</label>
+46:         <input type="text" id="tipoDocumento" name="tipoDocumento" value="<%= usuario.getTipoDocumento() %>" <%= (campoActualizar.equals("tipoDocumento")) ? "" : "readonly" %>><br>
+47: 
+48:         <label for="numeroDocumento">Número de Documento:</label>
+49:         <input type="text" id="numeroDocumento" name="numeroDocumento" value="<%= usuario.getNumero_documento_usuario() %>" <%= (campoActualizar.equals("numeroDocumento")) ? "" : "readonly" %>><br>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+02-Dec-2023 21:01:06.686 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-Dec-2023 21:01:06.687 INFORMACIÓN [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

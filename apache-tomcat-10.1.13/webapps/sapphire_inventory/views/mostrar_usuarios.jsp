@@ -5,39 +5,14 @@
 <%@ page import="jakarta.servlet.http.HttpSession" %>
 <%@ page import="jakarta.servlet.http.HttpServletRequest" %>
 <%@ page import="jakarta.servlet.RequestDispatcher" %>
-<%@ page import="org.openqa.selenium.WebDriver" %>
-<%@ page import="org.openqa.selenium.support.events.WebDriverEventListener" %>
-
-<%
-    WebDriver driver = (WebDriver) session.getAttribute("driver");
-
-    driver.onPageLoad(new Runnable() {
-
-        @Override
-        public void run() {
-
-            driver.clearHistory();
-
-        }
-        
-    });
-
-    driver.onPageLoad(new Runnable() {
-
-        @Override
-        public void run() {
-
-            driver.deleteAllCookies();
-
-        }
-
-    });
-
-%>
 
 <% 
 
     HttpSession sesion = request.getSession();
+
+    modelo_usuario modelo = new modelo_usuario();
+
+    List<modelo_usuario> users = modelo.mostrar_usuarios();
 
     if (sesion.getAttribute("usuario") != null) {   
 
@@ -51,18 +26,8 @@
     <title>USUARIOS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-
-<%
-
-    modelo_usuario modelo = new modelo_usuario();
-
-    List<modelo_usuario> users = modelo.mostrar_usuarios();
-
-    %> 
-
 <body>
 
-    <!--modificar-->
     <button><a href="views/registro_usuario.jsp">Registrar usuario</a></button> 
 
     <button><a href="views/registro_producto.jsp">Registrar producto</a></button> 
@@ -127,16 +92,17 @@
     <td><%= user.getContraseña() %></td>
 
     <td>
-        <form action="/sapphire_inventory/actualizar_usuario_servlet" method="GET">
-            <input type="hidden" name="usuario_id_actualizar" value="<%= user.getId_usuario() %>">
+        <form action="views/menu_actualizacion_usuario.jsp" method="GET">
+            <input type="hidden" name="usuario_id_actualizar" value="<%=user.getId_usuario()%>">
             <input type="submit" value="Actualizar">
         </form>
         <form action="/sapphire_inventory/eliminar_usuario_servlet" method="GET">
-            <input type="hidden" name="usuario_id_eliminar" value="<%= user.getId_usuario() %>">
+            <input type="hidden" name="usuario_id_eliminar" value="<%=user.getId_usuario()%>">
             <input type="submit" value="Borrar">
         </form>
     </td>
 </tr>
+
 <% } %>
 
         </tbody>

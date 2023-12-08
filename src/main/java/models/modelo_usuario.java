@@ -180,6 +180,7 @@ public class modelo_usuario {
 
         Connection connection = null;
         PreparedStatement ps = null;
+        ResultSet rs = null;
 
         try {
             
@@ -206,9 +207,9 @@ public class modelo_usuario {
 
                 // Ejecuta el procedimiento almacenado
 
-                ps.executeUpdate();
+                rs = ps.executeQuery();
 
-                System.out.println("Usuario registrado con éxito.");
+                return rs.next();
 
             } else {
 
@@ -244,7 +245,7 @@ public class modelo_usuario {
 
         }
 
-        return true;
+        return false;
         
     }
 
@@ -286,7 +287,7 @@ public class modelo_usuario {
                     setRol_usuario(rol);
                     setContraseña(contraseña);
 
-                    modelo_usuario usuario = new modelo_usuario(nombres, apellidos, tipoDocumento, numeroDocumento, contraseña, usuario_rs, telefono, id, rol);
+                    modelo_usuario usuario = new modelo_usuario(nombres, apellidos, tipoDocumento, numeroDocumento, contraseña, usuario_rs, telefono, rol, id);
                     usuarios.add(usuario);
 
                 }
@@ -335,39 +336,118 @@ public class modelo_usuario {
 
     }
 
-    public void actualizar_usuario() {
+    public List<modelo_usuario> mostrar_usuario(Integer id_usuario_recibido) {
 
+        List<modelo_usuario> usuario = new ArrayList<>();
         Connection connection = null;
         PreparedStatement ps = null;
+        ResultSet rs = null;
 
         try {
             connection = Conectar.Connect();
 
             if (connection != null) {
 
-                // Llamamos al procedimiento almacenado "update_usuario"
+                String sql = "call read_usuario_especifico(?)";
+                ps = connection.prepareStatement(sql);
+                ps.setInt(1, id_usuario_recibido);
+                rs = ps.executeQuery();
+                
 
-                String sql = "CALL update_usuario(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                while (rs.next()) {
+
+                    int id = rs.getInt("id_usuario");
+                    String nombres = rs.getString("nombres_usuario");
+                    String apellidos = rs.getString("apellidos_usuario");
+                    int tipoDocumento = rs.getInt("tipo_documento");
+                    String numeroDocumento = rs.getString("numero_documento_usuario");
+                    String usuario_rs = rs.getString("usuario");
+                    String telefono = rs.getString("telefono_usuario");
+                    Integer rol = Integer.parseInt(rs.getString("rol_usuario"));
+                    String contraseña = rs.getString("contraseña");
+
+                    setId_usuario(id);
+                    setNombres_usuario(usuario_rs);
+                    setApellidos_usuario(apellidos);
+                    setTipo_documento(tipoDocumento);
+                    setNumero_documento_usuario(numeroDocumento);
+                    setUsuario(usuario_rs);
+                    setTelefono_usuario(telefono);
+                    setRol_usuario(rol);
+                    setContraseña(contraseña);
+
+                    modelo_usuario usuario_especifico = new modelo_usuario(nombres, apellidos, tipoDocumento, numeroDocumento, contraseña, usuario_rs, telefono, rol, id);
+                    usuario.add(usuario_especifico);
+
+                }
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al leer usuario: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (rs != null) {
+
+                    rs.close();
+                    
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+           
+        }
+
+        return usuario;
+
+    }
+
+    public boolean actualizar_nombres_usuario(String nombres, Integer id_recibido) {
+
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "CALL update_nombres_usuario(?, ?)";
 
                 ps = connection.prepareStatement(sql);
 
                 // Configuramos los parámetros del procedimiento almacenado
 
-                ps.setInt(1, id_usuario);
-                ps.setString(2, nombres_usuario);
-                ps.setString(3, apellidos_usuario);
-                ps.setInt(4, tipo_documento);
-                ps.setString(5, numero_documento_usuario);
-                ps.setString(6, usuario);
-                ps.setString(7, contraseña);
-                ps.setString(8, telefono_usuario);
-                ps.setInt(9, rol_usuario);
+                ps.setInt(1, id_recibido);
+                ps.setString(2, nombres);
 
-                // Ejecuta el procedimiento almacenado
+                rs = ps.executeQuery();
 
-                ps.executeUpdate();
-
-                System.out.println("Usuario actualizado con éxito.");
+                return rs.next();
 
             } else {
 
@@ -403,12 +483,448 @@ public class modelo_usuario {
 
         }
 
+        return false;
+
     }
 
-    public void delete_usuario(Integer id_usuario) {
+     public boolean actualizar_apellidos_usuario(String apellidos, Integer id_recibido) {
 
         Connection connection = null;
         PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "CALL update_nombres_usuario(?, ?)";
+
+                ps = connection.prepareStatement(sql);
+
+                // Configuramos los parámetros del procedimiento almacenado
+
+                ps.setInt(1, id_recibido);
+                ps.setString(1, apellidos);
+
+                rs = ps.executeQuery();
+
+                return rs.next();
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al actualizar usuario: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+
+        }
+
+        return false;
+
+    }
+
+     public boolean actualizar_tipo_documento_usuario(Integer tipo_documento_recibido, Integer id_recibido) {
+
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "CALL update_tipo_documento_usuario(?, ?)";
+
+                ps = connection.prepareStatement(sql);
+
+                // Configuramos los parámetros del procedimiento almacenado
+
+                ps.setInt(1, id_recibido);
+                ps.setInt(1, tipo_documento_recibido);
+
+                rs = ps.executeQuery();
+
+                return rs.next();
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al actualizar usuario: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+
+        }
+
+        return false;
+
+    }
+
+     public boolean actualizar_numero_documento_usuario(String documento_recibido, Integer id_recibido) {
+
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "CALL update_numero_documento_usuario(?, ?)";
+
+                ps = connection.prepareStatement(sql);
+
+                // Configuramos los parámetros del procedimiento almacenado
+
+                ps.setInt(1, id_recibido);
+                ps.setString(1, documento_recibido);
+
+                rs = ps.executeQuery();
+
+                return rs.next();
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al actualizar usuario: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+
+        }
+
+        return false;
+
+    }
+
+     public boolean actualizar_telefono_usuario(String telefono_recibido, Integer id_recibido) {
+
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "CALL update_telefono_usuario(?, ?)";
+
+                ps = connection.prepareStatement(sql);
+
+                // Configuramos los parámetros del procedimiento almacenado
+
+                ps.setInt(1, id_recibido);
+                ps.setString(1, telefono_recibido);
+
+                rs = ps.executeQuery();
+
+                return rs.next();
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al actualizar usuario: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+
+        }
+
+        return false;
+
+    }
+
+     public boolean actualizar_rol_usuario(Integer rol_recibido, Integer id_recibido) {
+
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "CALL update_rol_usuario(?, ?)";
+
+                ps = connection.prepareStatement(sql);
+
+                // Configuramos los parámetros del procedimiento almacenado
+
+                ps.setInt(1, id_recibido);
+                ps.setInt(1, rol_recibido);
+
+                rs = ps.executeQuery();
+
+                return rs.next();
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al actualizar usuario: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+
+        }
+
+        return false;
+
+    }
+
+     public boolean actualizar_usuario_usuario(String usuario_recibido, Integer id_recibido) {
+
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "CALL update_usuario_usuario(?, ?)";
+
+                ps = connection.prepareStatement(sql);
+
+                // Configuramos los parámetros del procedimiento almacenado
+
+                ps.setInt(1, id_recibido);
+                ps.setString(1, usuario_recibido);
+
+                rs = ps.executeQuery();
+
+                return rs.next();
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al actualizar usuario: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+
+        }
+
+        return false;
+
+    }
+
+     public boolean actualizar_contraseña_usuario(String contraseña_recibida, Integer id_recibido) {
+
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "CALL update_contraseña_usuario(?, ?)";
+
+                ps = connection.prepareStatement(sql);
+
+                // Configuramos los parámetros del procedimiento almacenado
+
+                ps.setInt(1, id_recibido);
+                ps.setString(1, contraseña_recibida);
+
+                rs = ps.executeQuery();
+
+                return rs.next();
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al actualizar usuario: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+
+        }
+
+        return false;
+
+    }
+
+    public boolean delete_usuario(Integer id_usuario) {
+
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
 
         try {
 
@@ -422,12 +938,11 @@ public class modelo_usuario {
 
                 ps = connection.prepareStatement(sql);
 
-
                 ps.setInt(1, id_usuario);
 
-                ps.executeUpdate();
+                rs = ps.executeQuery();
 
-                System.out.println("Usuario eliminado con éxito.");
+                return rs.next();
 
             } else {
 
@@ -462,6 +977,8 @@ public class modelo_usuario {
             }
 
         }
+
+        return false;
         
     }
 
@@ -485,9 +1002,7 @@ public class modelo_usuario {
                 ps.setInt(3, rol_recibido);
                 rs = ps.executeQuery();
 
-                return rs.next(); 
-
-                
+                return rs.next();  
 
             } else {
 
@@ -531,6 +1046,72 @@ public class modelo_usuario {
         }
 
         return false; 
+
+    }
+
+    public boolean validar_contraseña (String usuario, String contrasenna) {
+
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "SELECT * FROM usuario WHERE usuario = ? AND contraseña = ?";
+
+                ps = connection.prepareStatement(sql);
+                ps.setString(1, usuario);
+                ps.setString(2, contrasenna);
+                rs = ps.executeQuery();
+
+                return rs.next(); 
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al verificar el usuario: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (rs != null) {
+
+                    rs.close();
+
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+            
+        }
+
+        return false;
+
     }
 
 }
