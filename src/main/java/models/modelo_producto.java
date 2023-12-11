@@ -338,4 +338,105 @@ public class modelo_producto {
 
 }
 
+public ArrayList<modelo_producto> producto_id (Integer id_producto_recibido) {
+
+        ArrayList<modelo_producto> producto_id = new ArrayList<>();
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "select * from producto where id_producto = ?";
+                ps = connection.prepareStatement(sql);
+
+                ps.setInt(1, id_producto_recibido);
+
+                rs = ps.executeQuery();
+
+                while (rs.next()) {
+
+                    Integer id = rs.getInt("id_producto");                    
+                    String marca = rs.getString("marca_producto");
+                    Boolean estado = rs.getBoolean("estado");
+                    String nombre = rs.getString("nombre_producto");
+                    String descripcion = rs.getString("descripcion_producto");
+                    Integer cantidad = rs.getInt("cantidad_producto");
+                    Integer medida = rs.getInt("medida");
+                    Integer id_categoria_consulta = rs.getInt("id_categoria");
+                    byte [] imagen = rs.getBytes("imagen");
+
+                    modelo_producto producto = new modelo_producto(id, marca, estado, nombre, descripcion, cantidad, medida, id_categoria_consulta, imagen);
+                    producto_id.add(producto);
+                    
+                    setId_producto(id);
+                    setMarca_producto(marca);
+                    setEstado(estado);
+                    setNombre_producto(nombre);
+                    setDescripcion_producto(descripcion);
+                    setCantidad_producto(cantidad_producto);
+                    setMedida(medida);
+                    setId_categoria(id_categoria_consulta);
+                    setImagen(imagen);
+
+                    System.out.println(id_producto);
+                    System.out.println(marca_producto);
+                    System.out.println(estado);
+                    System.out.println(nombre_producto);
+                    System.out.println(descripcion_producto);
+                    System.out.println(cantidad_producto);
+                    System.out.println(medida);
+                    System.out.println(id_categoria);
+                    System.out.println(imagen);
+
+                }
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al leer productos: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (rs != null) {
+
+                    rs.close();
+                    
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+           
+        }
+
+        return producto_id;
+
+}
+
 }

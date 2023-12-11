@@ -1,7 +1,9 @@
 package models;
 
-import java.sql.Date;
 import java.util.*;
+
+import connection.Conectar;
+
 import java.sql.*;
 
 public class modelo_item {
@@ -20,18 +22,6 @@ public class modelo_item {
     public void setId_item(Integer id_item) {
 
         this.id_item = id_item;
-
-    }
-    
-    public Integer getId_proveedor() {
-
-        return id_entrada;
-
-    }
-
-    public void setId_proveedor(Integer id_proveedor) {
-
-        this.id_entrada = id_proveedor;
 
     }
 
@@ -92,5 +82,89 @@ public class modelo_item {
         this.cantidad = cantidad;
         
     }
+
+    public ArrayList<modelo_item> item_id (Integer id_item_recibido) {
+
+        ArrayList<modelo_item> item_id = new ArrayList<>();
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+
+            connection = Conectar.Connect();
+
+            if (connection != null) {
+
+                String sql = "select * from item where id_producto = ?";
+                ps = connection.prepareStatement(sql);
+
+                ps.setInt(1, id_item_recibido);
+
+                rs = ps.executeQuery();
+
+                while (rs.next()) {
+
+                    Integer id = rs.getInt("id_item");                    
+                    Integer precio_venta = rs.getInt("estaprecio_ventado");
+                    Integer id_entrada = rs.getInt("id_entrada");
+                    Integer id_producto = rs.getInt("id_producto");
+                    Integer cantidad = rs.getInt("cantidad_item");
+
+                    modelo_item item = new modelo_item(id, precio_venta, id_entrada, id_producto, cantidad);
+                    item_id.add(item);
+                    
+                    setCantidad(cantidad);
+                    setId_entrada(id_entrada);
+                    setId_item(id);
+                    setId_producto(id_producto);
+                    setPrecio(precio_venta);
+
+
+                }
+
+            } else {
+
+                System.out.println("Error de conexión a la base de datos.");
+
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println("Error al leer productos: " + e.getMessage());
+
+        } finally {
+
+            try {
+
+                if (ps != null) {
+
+                    ps.close();
+
+                }
+
+                if (rs != null) {
+
+                    rs.close();
+                    
+                }
+
+                if (connection != null) {
+
+                    Conectar.Cerrar_conexion(connection);
+
+                }
+
+            } catch (SQLException e) {
+
+                System.out.println("Error al cerrar la conexión: " + e.getMessage());
+
+            }
+           
+        }
+
+        return item_id;
+
+}
     
 }

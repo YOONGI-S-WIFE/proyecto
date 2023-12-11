@@ -79,11 +79,11 @@
     <td><%= proveedor.getNombre() %></td>
 
     <td>
-        <form action="views/menu_actualizacion_usuario.jsp" method="GET">
+        <form action="views/menu_actualizacion_proveedor.jsp" method="GET">
             <input type="hidden" name="id_actualizar" value="<%=proveedor.getId_proveedor()%>">
             <input type="submit" value="Actualizar">
         </form>
-        <form action="/sapphire_inventory/eliminar_usuario_servlet" method="GET">
+        <form action="/sapphire_inventory/eliminar_proveedor_servlet" method="GET">
             <input type="hidden" name="id_inactivar" value="<%=proveedor.getId_proveedor()%>">
             <input type="submit" value="inactivar">
         </form>

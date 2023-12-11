@@ -9,6 +9,10 @@
 
     HttpSession sesion = request.getSession();
 
+    modelo_categoria modelo_categorias = new modelo_categoria();
+
+    List<modelo_categoria> categorias =  modelo_categorias.categorias();
+
     if (sesion.getAttribute("usuario") != null) {   
 
 %>
@@ -23,14 +27,6 @@
     <title>REGISTRO DE PRODUCTOS </title>
 
 </head>
-
-<%
-
-    modelo_categoria modelo_categorias = new modelo_categoria();
-
-    List<modelo_categoria> categorias =  modelo_categorias.categorias();
-
-    %> 
 
 <body>
 
