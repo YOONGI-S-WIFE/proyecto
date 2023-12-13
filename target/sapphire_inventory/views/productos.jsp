@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="models.modelo_producto" %>
 <%@ page import="java.util.*" %>
 <%@ page import="jakarta.servlet.http.HttpSession" %>

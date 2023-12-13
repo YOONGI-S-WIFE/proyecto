@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="servlets.registro_proveedor_servlet" %>
 <%@ page import="java.util.*" %>
 <%@ page import="jakarta.servlet.http.HttpSession" %>
@@ -28,7 +28,7 @@
 
 <h2>Registro de Producto</h2>
 
-    <form action="/sapphire_inventory/registro_proveedor_servlet" method="POST" enctype="multipart/form-data">
+    <form action="/sapphire_inventory/registro_proveedor_servlet" method="POST">
 
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" required>

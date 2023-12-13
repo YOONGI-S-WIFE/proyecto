@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="models.modelo_categoria" %>
 <%@ page import="java.util.*" %>
 <%@ page import="jakarta.servlet.http.HttpSession" %>
@@ -72,6 +72,12 @@
             <li>
                 <form action="/sapphire_inventory/mostrar_categorias_servlet" method="post">
                     <input class="btn btn-outline-primary" value="productos" name ="productos" type = "submit">
+                </form>
+            </li>
+            <br>
+            <li>
+                <form action="/sapphire_inventory/reportes_servlet" method="post">
+                    <input class="btn btn-outline-primary" value="reportes" name ="productos" type = "submit">
                 </form>
             </li>
         </ul>

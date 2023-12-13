@@ -8,10 +8,9 @@ public class modelo_detalle_salida {
     private Integer id_salida = null;
     private Integer id_producto = null;
 
-    public modelo_detalle_salida(Integer id_detalle_salida, Integer precio_item_vendido, Integer cantidad_item_vendido,
+    public modelo_detalle_salida(Integer precio_item_vendido, Integer cantidad_item_vendido,
             Integer id_salida, Integer id_producto) {
 
-        this.id_detalle_salida = id_detalle_salida;
         this.precio_item_vendido = precio_item_vendido;
         this.cantidad_item_vendido = cantidad_item_vendido;
         this.id_salida = id_salida;

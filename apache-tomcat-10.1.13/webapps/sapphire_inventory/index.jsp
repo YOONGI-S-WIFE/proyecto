@@ -34,7 +34,7 @@
                     </select>
                 </div>
                 <button type="submit" value="Iniciar Sesión">Iniciar Sesión</button>
-                <a class="a" href="views/registro_usuario.jsp">registrarse</a>
+                <a class="a" href="views/registro_empleado.jsp">registrarse</a>
             </form>
         </div>
 

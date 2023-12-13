@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="models.modelo_producto" %>
 <%@ page import="models.modelo_item" %>
 <%@ page import="java.util.*" %>
@@ -9,14 +9,6 @@
 <% 
 
     HttpSession sesion = request.getSession();
-
-    modelo_producto modelo = new modelo_producto();
-
-    List<modelo_producto> producto_id =  modelo.producto_id();
-
-    modelo_item modelo = new modelo_item();
-
-    List<modelo_item> item_id =  modelo.item_id();
 
     if (sesion.getAttribute("usuario") != null) {   
 
@@ -31,62 +23,72 @@
 </head>
 <body>
 
-    <form action="/sapphire_inventory/venta_servlet" method="POST">
+    <h1>VAMO A HACER UNA VENTA :3</h1>
+
+    <form action="/sapphire_inventory/item_servlet" method="post">
 
         <label for="id">id producto</label>
-        <input type="number" id="id_producto" name="nombre" required>
-
-        <br><br>
-
-        <% for (modelo_producto producto : producto_id) { %>
-
-        <label for="precio_producto">nombre</label>
-        <input type="text" id="nombre" value=" <=% producto.getNombre_producto() %> ">
-
-        <br><br>
-        
-        <% } 
-        
-        for (modelo_item item : item_id) {
-            
-        %>
-
-        <label for="precio_producto">precio producto</label>
-        <input type="text" id="precio" value=" <=% item.getPrecio_venta() %> ">
-
-        <br><br>
-
-        <% } %>
+        <input type="number" id="id_producto" name="id_producto" required>
 
         <label for="cantidad">cantidad</label>
-        <input type="number" id="cantidad" name="imagen" required>
+        <input type="number" id="cantidad" name="cantidad" required>
 
-        <br><br>
-
-        <button name ="registrar" type = "submit" class="btn">Registrar</button>
-
+        <button type="submit">agregar producto</button>
+    
     </form>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#id_producto").change(function() {
-                var idProducto = $(this).val();
-                $.ajax({
-                    type: "GET",
-                    url: "/sapphire_inventory/obtener_datos_producto?id=" + idProducto,
-                    success: function(data) {
-                        // Actualiza los campos con los datos del producto
-                        $("#nombre").val(data.nombre);
-                        $("#precio").val(data.precio);
-                    },
-                    error: function(error) {
-                        console.log(error);
-                    }
-                });
-            });
-        });
-    </script>
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>precio</th>
+                <th>cantidad</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+            <% 
+
+            List<modelo_item> listaProductos = (List<modelo_item>) sesion.getAttribute("listaProductos");
+
+                if (listaProductos != null) {
+                for (modelo_item item : listaProductos) {
+
+            %>
+
+                <td><%= item.getId_item() %></td>
+                <td><%= item.getId_producto() %></td>
+                <td><%= item.getPrecio() %></td>
+                <td><%= item.getCantidad() %></td>
+
+            </tr>
+
+            <% 
+            
+            } 
+            
+            }
+            
+            %>
+
+        </tbody>
+
+    </table>
+    
+    <form action="/sapphire_inventory/venta_servlet" method="POST">
+
+    <button type="submit">vender</button>
+      
+    </form>
     
 </body>
 </html>
